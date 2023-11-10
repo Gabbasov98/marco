@@ -1,0 +1,2274 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+    <!--    <link rel="preload" href="fonts/Akrobat.woff2" as="font" type="font/woff2" crossorigin>-->
+    <title>Каталог</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+
+            <div class="container">
+
+
+                <div class="header__inner">
+                    <div class="burger">
+                        <img class="_view1" src="img/burger.svg" alt="">
+                        <img class="_view2" src="img/burger2.svg" alt="">
+                    </div>
+
+                    <div class="mob-menu">
+                        <div class="header-contacts">
+                            <a href="" class="header-contacts__phone">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3332 14.1V16.6C18.3341 16.8321 18.2866 17.0618 18.1936 17.2745C18.1006 17.4871 17.9643 17.678 17.7933 17.8349C17.6222 17.9918 17.4203 18.1112 17.2005 18.1856C16.9806 18.2599 16.7477 18.2876 16.5165 18.2667C13.9522 17.988 11.489 17.1118 9.32486 15.7083C7.31139 14.4289 5.60431 12.7218 4.32486 10.7083C2.91651 8.53434 2.04007 6.05916 1.76653 3.48334C1.7457 3.25289 1.77309 3.02064 1.84695 2.80136C1.9208 2.58208 2.03951 2.38058 2.1955 2.20969C2.3515 2.0388 2.54137 1.90226 2.75302 1.80877C2.96468 1.71528 3.19348 1.66689 3.42486 1.66667H5.92486C6.32928 1.66269 6.72136 1.8059 7.028 2.06961C7.33464 2.33332 7.53493 2.69954 7.59153 3.1C7.69705 3.90006 7.89274 4.68561 8.17486 5.44167C8.28698 5.73994 8.31125 6.0641 8.24478 6.37574C8.17832 6.68737 8.02392 6.97343 7.79986 7.2L6.74153 8.25833C7.92783 10.3446 9.65524 12.072 11.7415 13.2583L12.7999 12.2C13.0264 11.9759 13.3125 11.8215 13.6241 11.7551C13.9358 11.6886 14.2599 11.7129 14.5582 11.825C15.3143 12.1071 16.0998 12.3028 16.8999 12.4083C17.3047 12.4654 17.6744 12.6693 17.9386 12.9812C18.2029 13.2932 18.3433 13.6913 18.3332 14.1Z" stroke="#282828" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>+375 29 784 22 33</span>
+                            </a>
+                            <button data-modal="regModal" class="header-contacts__call">
+                                <span class="text16">Заказать звонок</span>
+                            </button>
+                            <a href="" class="header-contacts__email">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6M22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6M22 6L12 13L2 6" stroke="#101828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="menu">
+                            <div class="container">
+                                <div class="menu__inner">
+                                    <div class="menu-item">
+                                        <a href="" class="menu-item__link">
+                                            <span>Холдинг Марко</span>
+                                        </a>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-item__show">
+                                            <a href="">Женская</a>
+                                            <button class="menu-item__toggle"></button>
+                                        </div>
+                                        <div class="menu-item__hidden">
+                                            <div class="menu-dropdown">
+                                                <div class="container">
+                                                    <div class="menu-dropdown__inner">
+                                                        <div class="menu-dropdown__col">
+                                                            <div class="menu-dropdown__title">Все категории</div>
+                                                            <div class="menu-links _col2">
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Балетки</span>
+                                                                    <span class="menu-links__item-num">(2)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботильоны</span>
+                                                                    <span class="menu-links__item-num">(66)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботфорты</span>
+                                                                    <span class="menu-links__item-num">(15)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кроксы</span>
+                                                                    <span class="menu-links__item-num">(13)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Лоферы</span>
+                                                                    <span class="menu-links__item-num">(64)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/ботинки</span>
+                                                                    <span class="menu-links__item-num">(332)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/сапоги</span>
+                                                                    <span class="menu-links__item-num">(139)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сапоги</span>
+                                                                    <span class="menu-links__item-num">(88)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Слипоны</span>
+                                                                    <span class="menu-links__item-num">(18)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Туфли</span>
+                                                                    <span class="menu-links__item-num">(138)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Челси</span>
+                                                                    <span class="menu-links__item-num">(28)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Босоножки</span>
+                                                                    <span class="menu-links__item-num">(267)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботинки</span>
+                                                                    <span class="menu-links__item-num">(368)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кеды</span>
+                                                                    <span class="menu-links__item-num">(39)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кроссовки/сникеры</span>
+                                                                    <span class="menu-links__item-num">(326)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Мокасины</span>
+                                                                    <span class="menu-links__item-num">(2)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/кеды</span>
+                                                                    <span class="menu-links__item-num">(104)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сабо</span>
+                                                                    <span class="menu-links__item-num">(168)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сапожки</span>
+                                                                    <span class="menu-links__item-num">(34)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Тапочки</span>
+                                                                    <span class="menu-links__item-num">(136)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Туфли-лодочки</span>
+                                                                    <span class="menu-links__item-num">(144)</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menu-dropdown__col">
+                                                            <div class="menu-dropdown__group">
+                                                                <div class="menu-dropdown__title">Спецпредложения</div>
+                                                                <div class="menu-links">
+                                                                    <div class="menu-links__col">
+                                                                        <div class="menu-links__items">
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь больших размеров</span>
+                                                                            </a>
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь малых размеров</span>
+                                                                            </a>
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь повышенной полноты</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu-dropdown__bottom">
+                                                                <div class="menu-dropdown__group">
+                                                                    <div class="menu-dropdown__title">Бренды</div>
+                                                                    <div class="menu-links">
+                                                                        <div class="menu-links__col">
+                                                                            <div class="menu-links__items">
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Bravo</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Marko</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Spotter</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Gator</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Marko Home</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item mt52">
+                                                                                    <span class="menu-links__item-title">Гид по брендам</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="menu-dropdown__banner">
+                                                                    <a href="" class="banner">
+                                                                        <img src="img/banner.png" alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-item__show">
+                                            <a href="">Мужская</a>
+                                            <button class="menu-item__toggle"></button>
+                                        </div>
+                                        <div class="menu-item__hidden">
+                                            <div class="menu-dropdown">
+                                                <div class="container">
+                                                    <div class="menu-dropdown__inner">
+                                                        <div class="menu-dropdown__col">
+                                                            <div class="menu-dropdown__title">Все категории</div>
+                                                            <div class="menu-links _col2">
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Балетки</span>
+                                                                    <span class="menu-links__item-num">(2)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботильоны</span>
+                                                                    <span class="menu-links__item-num">(66)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботфорты</span>
+                                                                    <span class="menu-links__item-num">(15)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кроксы</span>
+                                                                    <span class="menu-links__item-num">(13)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Лоферы</span>
+                                                                    <span class="menu-links__item-num">(64)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/ботинки</span>
+                                                                    <span class="menu-links__item-num">(332)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/сапоги</span>
+                                                                    <span class="menu-links__item-num">(139)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сапоги</span>
+                                                                    <span class="menu-links__item-num">(88)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Слипоны</span>
+                                                                    <span class="menu-links__item-num">(18)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Туфли</span>
+                                                                    <span class="menu-links__item-num">(138)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Челси</span>
+                                                                    <span class="menu-links__item-num">(28)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Босоножки</span>
+                                                                    <span class="menu-links__item-num">(267)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботинки</span>
+                                                                    <span class="menu-links__item-num">(368)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кеды</span>
+                                                                    <span class="menu-links__item-num">(39)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кроссовки/сникеры</span>
+                                                                    <span class="menu-links__item-num">(326)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Мокасины</span>
+                                                                    <span class="menu-links__item-num">(2)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/кеды</span>
+                                                                    <span class="menu-links__item-num">(104)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сабо</span>
+                                                                    <span class="menu-links__item-num">(168)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сапожки</span>
+                                                                    <span class="menu-links__item-num">(34)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Тапочки</span>
+                                                                    <span class="menu-links__item-num">(136)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Туфли-лодочки</span>
+                                                                    <span class="menu-links__item-num">(144)</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menu-dropdown__col">
+                                                            <div class="menu-dropdown__group">
+                                                                <div class="menu-dropdown__title">Спецпредложения</div>
+                                                                <div class="menu-links">
+                                                                    <div class="menu-links__col">
+                                                                        <div class="menu-links__items">
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь больших размеров</span>
+                                                                            </a>
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь малых размеров</span>
+                                                                            </a>
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь повышенной полноты</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu-dropdown__bottom">
+                                                                <div class="menu-dropdown__group">
+                                                                    <div class="menu-dropdown__title">Бренды</div>
+                                                                    <div class="menu-links">
+                                                                        <div class="menu-links__col">
+                                                                            <div class="menu-links__items">
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Bravo</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Marko</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Spotter</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Gator</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Marko Home</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item mt52">
+                                                                                    <span class="menu-links__item-title">Гид по брендам</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="menu-dropdown__banner">
+                                                                    <a href="" class="banner">
+                                                                        <img src="img/banner.png" alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-item__show">
+                                            <a href="">Девочкам</a>
+                                            <button class="menu-item__toggle"></button>
+                                        </div>
+                                        <div class="menu-item__hidden">
+                                            <div class="menu-dropdown">
+                                                <div class="container">
+                                                    <div class="menu-dropdown__inner">
+                                                        <div class="menu-dropdown__col">
+                                                            <div class="menu-dropdown__title">Все категории</div>
+                                                            <div class="menu-links _col2">
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Балетки</span>
+                                                                    <span class="menu-links__item-num">(2)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботильоны</span>
+                                                                    <span class="menu-links__item-num">(66)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботфорты</span>
+                                                                    <span class="menu-links__item-num">(15)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кроксы</span>
+                                                                    <span class="menu-links__item-num">(13)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Лоферы</span>
+                                                                    <span class="menu-links__item-num">(64)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/ботинки</span>
+                                                                    <span class="menu-links__item-num">(332)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/сапоги</span>
+                                                                    <span class="menu-links__item-num">(139)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сапоги</span>
+                                                                    <span class="menu-links__item-num">(88)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Слипоны</span>
+                                                                    <span class="menu-links__item-num">(18)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Туфли</span>
+                                                                    <span class="menu-links__item-num">(138)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Челси</span>
+                                                                    <span class="menu-links__item-num">(28)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Босоножки</span>
+                                                                    <span class="menu-links__item-num">(267)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботинки</span>
+                                                                    <span class="menu-links__item-num">(368)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кеды</span>
+                                                                    <span class="menu-links__item-num">(39)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кроссовки/сникеры</span>
+                                                                    <span class="menu-links__item-num">(326)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Мокасины</span>
+                                                                    <span class="menu-links__item-num">(2)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/кеды</span>
+                                                                    <span class="menu-links__item-num">(104)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сабо</span>
+                                                                    <span class="menu-links__item-num">(168)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сапожки</span>
+                                                                    <span class="menu-links__item-num">(34)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Тапочки</span>
+                                                                    <span class="menu-links__item-num">(136)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Туфли-лодочки</span>
+                                                                    <span class="menu-links__item-num">(144)</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menu-dropdown__col">
+                                                            <div class="menu-dropdown__group">
+                                                                <div class="menu-dropdown__title">Спецпредложения</div>
+                                                                <div class="menu-links">
+                                                                    <div class="menu-links__col">
+                                                                        <div class="menu-links__items">
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь больших размеров</span>
+                                                                            </a>
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь малых размеров</span>
+                                                                            </a>
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь повышенной полноты</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu-dropdown__bottom">
+                                                                <div class="menu-dropdown__group">
+                                                                    <div class="menu-dropdown__title">Бренды</div>
+                                                                    <div class="menu-links">
+                                                                        <div class="menu-links__col">
+                                                                            <div class="menu-links__items">
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Bravo</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Marko</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Spotter</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Gator</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Marko Home</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item mt52">
+                                                                                    <span class="menu-links__item-title">Гид по брендам</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="menu-dropdown__banner">
+                                                                    <a href="" class="banner">
+                                                                        <img src="img/banner.png" alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-item__show">
+                                            <a href="">Мальчикам</a>
+                                            <button class="menu-item__toggle"></button>
+                                        </div>
+                                        <div class="menu-item__hidden">
+                                            <div class="menu-dropdown">
+                                                <div class="container">
+                                                    <div class="menu-dropdown__inner">
+                                                        <div class="menu-dropdown__col">
+                                                            <div class="menu-dropdown__title">Все категории</div>
+                                                            <div class="menu-links _col2">
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Балетки</span>
+                                                                    <span class="menu-links__item-num">(2)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботильоны</span>
+                                                                    <span class="menu-links__item-num">(66)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботфорты</span>
+                                                                    <span class="menu-links__item-num">(15)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кроксы</span>
+                                                                    <span class="menu-links__item-num">(13)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Лоферы</span>
+                                                                    <span class="menu-links__item-num">(64)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/ботинки</span>
+                                                                    <span class="menu-links__item-num">(332)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/сапоги</span>
+                                                                    <span class="menu-links__item-num">(139)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сапоги</span>
+                                                                    <span class="menu-links__item-num">(88)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Слипоны</span>
+                                                                    <span class="menu-links__item-num">(18)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Туфли</span>
+                                                                    <span class="menu-links__item-num">(138)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Челси</span>
+                                                                    <span class="menu-links__item-num">(28)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Босоножки</span>
+                                                                    <span class="menu-links__item-num">(267)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботинки</span>
+                                                                    <span class="menu-links__item-num">(368)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кеды</span>
+                                                                    <span class="menu-links__item-num">(39)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кроссовки/сникеры</span>
+                                                                    <span class="menu-links__item-num">(326)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Мокасины</span>
+                                                                    <span class="menu-links__item-num">(2)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/кеды</span>
+                                                                    <span class="menu-links__item-num">(104)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сабо</span>
+                                                                    <span class="menu-links__item-num">(168)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сапожки</span>
+                                                                    <span class="menu-links__item-num">(34)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Тапочки</span>
+                                                                    <span class="menu-links__item-num">(136)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Туфли-лодочки</span>
+                                                                    <span class="menu-links__item-num">(144)</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menu-dropdown__col">
+                                                            <div class="menu-dropdown__group">
+                                                                <div class="menu-dropdown__title">Спецпредложения</div>
+                                                                <div class="menu-links">
+                                                                    <div class="menu-links__col">
+                                                                        <div class="menu-links__items">
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь больших размеров</span>
+                                                                            </a>
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь малых размеров</span>
+                                                                            </a>
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь повышенной полноты</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu-dropdown__bottom">
+                                                                <div class="menu-dropdown__group">
+                                                                    <div class="menu-dropdown__title">Бренды</div>
+                                                                    <div class="menu-links">
+                                                                        <div class="menu-links__col">
+                                                                            <div class="menu-links__items">
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Bravo</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Marko</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Spotter</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Gator</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Marko Home</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item mt52">
+                                                                                    <span class="menu-links__item-title">Гид по брендам</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="menu-dropdown__banner">
+                                                                    <a href="" class="banner">
+                                                                        <img src="img/banner.png" alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-item__show">
+                                            <a href="">Малышам</a>
+                                            <button class="menu-item__toggle"></button>
+                                        </div>
+                                        <div class="menu-item__hidden">
+                                            <div class="menu-dropdown">
+                                                <div class="container">
+                                                    <div class="menu-dropdown__inner">
+                                                        <div class="menu-dropdown__col">
+                                                            <div class="menu-dropdown__title">Все категории</div>
+                                                            <div class="menu-links _col2">
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Балетки</span>
+                                                                    <span class="menu-links__item-num">(2)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботильоны</span>
+                                                                    <span class="menu-links__item-num">(66)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботфорты</span>
+                                                                    <span class="menu-links__item-num">(15)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кроксы</span>
+                                                                    <span class="menu-links__item-num">(13)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Лоферы</span>
+                                                                    <span class="menu-links__item-num">(64)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/ботинки</span>
+                                                                    <span class="menu-links__item-num">(332)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/сапоги</span>
+                                                                    <span class="menu-links__item-num">(139)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сапоги</span>
+                                                                    <span class="menu-links__item-num">(88)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Слипоны</span>
+                                                                    <span class="menu-links__item-num">(18)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Туфли</span>
+                                                                    <span class="menu-links__item-num">(138)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Челси</span>
+                                                                    <span class="menu-links__item-num">(28)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Босоножки</span>
+                                                                    <span class="menu-links__item-num">(267)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Ботинки</span>
+                                                                    <span class="menu-links__item-num">(368)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кеды</span>
+                                                                    <span class="menu-links__item-num">(39)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Кроссовки/сникеры</span>
+                                                                    <span class="menu-links__item-num">(326)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Мокасины</span>
+                                                                    <span class="menu-links__item-num">(2)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">П/кеды</span>
+                                                                    <span class="menu-links__item-num">(104)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сабо</span>
+                                                                    <span class="menu-links__item-num">(168)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Сапожки</span>
+                                                                    <span class="menu-links__item-num">(34)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Тапочки</span>
+                                                                    <span class="menu-links__item-num">(136)</span>
+                                                                </a>
+                                                                <a href="" class="menu-links__item">
+                                                                    <span class="menu-links__item-title">Туфли-лодочки</span>
+                                                                    <span class="menu-links__item-num">(144)</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menu-dropdown__col">
+                                                            <div class="menu-dropdown__group">
+                                                                <div class="menu-dropdown__title">Спецпредложения</div>
+                                                                <div class="menu-links">
+                                                                    <div class="menu-links__col">
+                                                                        <div class="menu-links__items">
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь больших размеров</span>
+                                                                            </a>
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь малых размеров</span>
+                                                                            </a>
+                                                                            <a href="" class="menu-links__item">
+                                                                                <span class="menu-links__item-title">Обувь повышенной полноты</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu-dropdown__bottom">
+                                                                <div class="menu-dropdown__group">
+                                                                    <div class="menu-dropdown__title">Бренды</div>
+                                                                    <div class="menu-links">
+                                                                        <div class="menu-links__col">
+                                                                            <div class="menu-links__items">
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Bravo</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Marko</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Spotter</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Gator</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item">
+                                                                                    <span class="menu-links__item-title">Marko Home</span>
+                                                                                </a>
+                                                                                <a href="" class="menu-links__item mt52">
+                                                                                    <span class="menu-links__item-title">Гид по брендам</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="menu-dropdown__banner">
+                                                                    <a href="" class="banner">
+                                                                        <img src="img/banner.png" alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="menu-item _small">
+                                        <div class="menu-item__show">
+                                            <a href="">Акции</a>
+                                            <button class="menu-item__toggle"></button>
+                                        </div>
+                                        <div class="menu-item__hidden">
+                                            <div class="menu-dropdown2">
+                                                <a href="" class="menu-dropdown2__link">
+                                                    <span>На спорте</span>
+                                                </a>
+                                                <a href="" class="menu-dropdown2__link">
+                                                    <span>Обуь для школы</span>
+                                                </a>
+                                                <a href="" class="menu-dropdown2__link _active">
+                                                    <span>Юбилейные цены</span>
+                                                </a>
+                                                <a href="" class="menu-dropdown2__link">
+                                                    <span>Юбилейные цены <br> на аксессуары</span>
+                                                </a>
+                                                <a href="" class="menu-dropdown2__link">
+                                                    <span>Все акции</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <a href="" class="menu-item__link">
+                                            <span>Контакты</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-action__lang">
+                            <a href="" class="header-action__lang-item">RU </a> /
+                            <a href="" class="header-action__lang-item _active"> EN</a>
+                        </div>
+                    </div>
+
+
+                    <a href="" class="header__logo">
+                        <img src="img/logo3.png" alt="">
+                    </a>
+
+                    <div class="header-action">
+                        <div class="header-search">
+                            <button class="header-search__btn _show-search _fill-hover">
+                                <svg class="_view1" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.2819 12.2087C15.6744 9.30186 15.5179 4.91926 12.79 2.19131C9.88314 -0.715527 5.1204 -0.715527 2.21357 2.19131C-0.693261 5.09814 -0.693261 9.86087 2.21357 12.7677C3.66699 14.2211 5.56761 14.9366 7.49059 14.9366C9.16761 14.9366 10.8446 14.3776 12.231 13.2596L16.7477 17.7764C16.9043 17.9329 17.0831 18 17.262 18C17.4409 18 17.6421 17.9329 17.7763 17.7764C18.067 17.4857 18.067 17.0385 17.7763 16.7255L13.2819 12.2087ZM3.2645 11.6944C0.939037 9.36895 0.939037 5.5677 3.2645 3.24224C4.42724 2.0795 5.94773 1.47578 7.49059 1.47578C9.03345 1.47578 10.5539 2.0795 11.7167 3.24224C14.0421 5.5677 14.0421 9.36895 11.7167 11.6944C9.39121 14.0422 5.58997 14.0422 3.2645 11.6944Z" fill="black" />
+                                </svg>
+                                <svg class="_view2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 1L1 19M1 1L19 19" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <fieldset class="header-search__field">
+                                <input type="text" placeholder="Поиск">
+                                <button class="header-search__btn _fill-hover">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2819 12.2087C15.6744 9.30186 15.5179 4.91926 12.79 2.19131C9.88314 -0.715527 5.1204 -0.715527 2.21357 2.19131C-0.693261 5.09814 -0.693261 9.86087 2.21357 12.7677C3.66699 14.2211 5.56761 14.9366 7.49059 14.9366C9.16761 14.9366 10.8446 14.3776 12.231 13.2596L16.7477 17.7764C16.9043 17.9329 17.0831 18 17.262 18C17.4409 18 17.6421 17.9329 17.7763 17.7764C18.067 17.4857 18.067 17.0385 17.7763 16.7255L13.2819 12.2087ZM3.2645 11.6944C0.939037 9.36895 0.939037 5.5677 3.2645 3.24224C4.42724 2.0795 5.94773 1.47578 7.49059 1.47578C9.03345 1.47578 10.5539 2.0795 11.7167 3.24224C14.0421 5.5677 14.0421 9.36895 11.7167 11.6944C9.39121 14.0422 5.58997 14.0422 3.2645 11.6944Z" fill="black" />
+                                    </svg>
+                                </button>
+                            </fieldset>
+                        </div>
+                        <a href="" class="header-cart">
+                            <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.83333C1 1.3731 1.3731 1 1.83333 1H5.16667C5.56385 1 5.90584 1.28032 5.98379 1.66979L6.68369 5.16667H20.1667C20.415 5.16667 20.6504 5.27744 20.8087 5.46879C20.9671 5.66015 21.0318 5.91215 20.9852 6.1561L19.6507 13.154C19.5364 13.7295 19.2233 14.2465 18.7663 14.6144C18.3115 14.9805 17.743 15.1758 17.1595 15.1667H9.07387C8.49031 15.1758 7.92183 14.9805 7.46706 14.6144C7.0102 14.2466 6.69719 13.7299 6.58277 13.1547L5.19066 6.19933C5.18501 6.17633 5.18032 6.15294 5.17663 6.12923L4.4836 2.66667H1.83333C1.3731 2.66667 1 2.29357 1 1.83333ZM6.83333 18.5C6.83333 17.5795 7.57952 16.8333 8.5 16.8333C9.42047 16.8333 10.1667 17.5795 10.1667 18.5C10.1667 19.4205 9.42047 20.1667 8.5 20.1667C7.57952 20.1667 6.83333 19.4205 6.83333 18.5ZM16 18.5C16 17.5795 16.7462 16.8333 17.6667 16.8333C18.5871 16.8333 19.3333 17.5795 19.3333 18.5C19.3333 19.4205 18.5871 20.1667 17.6667 20.1667C16.7462 20.1667 16 19.4205 16 18.5Z" stroke="#282828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div class="cart-pin">
+                                <span>567</span>
+                            </div>
+                        </a>
+                        <div class="header-auth">
+
+                            <button class="header-auth__btn _not-login">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.2979 15.5938L12.234 16.5302C12.4468 16.7431 12.7234 16.8708 13.0213 16.8495H14.1277V17.7859C14.1277 18.4883 14.7021 19.0629 15.4043 19.0629H16.3404V20.1696C16.3404 20.4676 16.4468 20.7443 16.6596 20.9571L17.4043 21.702C17.5957 21.8936 17.8723 22 18.1489 22H21.0851C21.5957 22 22 21.5956 22 21.0848V18.1477C22 17.8711 21.8936 17.5944 21.7021 17.4028L15.5957 11.2946C16.8723 7.65516 14.9574 3.67521 11.2979 2.39822C8.76596 1.50433 5.95745 2.14282 4.04255 4.03702C1.31915 6.78255 1.31915 11.2094 4.04255 13.9337C5.93617 15.8279 8.76596 16.4664 11.2979 15.5938ZM4.95745 4.9522C7.19149 2.71747 10.8085 2.71747 13.0213 4.93091C14.6596 6.56972 15.1489 9.05984 14.234 11.2094C14.1277 11.4436 14.1915 11.7202 14.3617 11.9118L20.7021 18.2542V20.723H18.234L17.617 20.1058V18.5947C17.617 18.1477 17.2553 17.7646 16.7872 17.7646H15.4043V16.3812C15.4043 15.9343 15.0426 15.5512 14.5745 15.5512H13.0638L11.8723 14.3593C11.6809 14.1678 11.4043 14.1252 11.1702 14.2316C8.25532 15.4661 4.91489 14.1039 3.68085 11.1882C2.76596 9.03856 3.25532 6.56972 4.89362 4.93091L4.95745 4.9522ZM7.61702 9.95374C8.91489 9.95374 9.95745 8.91086 9.95745 7.61259C9.95745 6.31432 8.91489 5.27145 7.61702 5.27145C6.31915 5.27145 5.2766 6.31432 5.2766 7.61259C5.2766 8.91086 6.34043 9.95374 7.61702 9.95374ZM7.61702 6.56972C8.21277 6.56972 8.68085 7.03795 8.68085 7.63387C8.68085 8.2298 8.21277 8.69803 7.61702 8.69803C7.02128 8.69803 6.55319 8.2298 6.55319 7.63387C6.55319 7.03795 7.02128 6.56972 7.61702 6.56972Z" fill="black" />
+                                </svg>
+                            </button>
+                            <div class="header-auth__menu">
+                                <a href="" class="header-auth__link">Авторизация</a>
+                                <a href="" class="header-auth__link">Регистрация</a>
+                            </div>
+
+                        </div>
+
+                        <div class="header-action__lang">
+                            <a href="" class="header-action__lang-item">RU </a> /
+                            <a href="" class="header-action__lang-item _active"> EN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="" class="breadcrumbs__item">Главная</a>
+                <span class="breadcrumbs__item">Мужская</span>
+            </div>
+        </div>
+        <main class="content">
+            <section class="catalog-item2">
+                <div class="container">
+                    <div class="catalog-item2__inner">
+                        <div class="catalog-item2__col">
+                            <div class="gallery">
+                                <img class="gallery__empty" src="img/no-image.webp" alt="">
+                            </div>
+                            <div class="may-like-items">
+                                <div class="may-like">
+                                    <div class="may-like__top">
+                                        <div class="text24 bold-text">
+                                            Вам также может понравиться:
+                                        </div>
+                                    </div>
+                                    <div class="may-like__slider slider">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="like-card">
+                                                        <div class="like-card__img">
+                                                            <img src="img/like.png" alt="">
+                                                        </div>
+                                                        <div class="like-card__title text16">
+                                                            <b>196.01</b> бел.руб.
+                                                        </div>
+                                                        <div class="like-card__desc text14">
+                                                            П/ботинки
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="like-card">
+                                                        <div class="like-card__img">
+                                                            <img src="img/like2.png" alt="">
+                                                        </div>
+                                                        <div class="like-card__title text16">
+                                                            <b>196.01</b> бел.руб.
+                                                        </div>
+                                                        <div class="like-card__desc text14">
+                                                            П/ботинки
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="like-card">
+                                                        <div class="like-card__img">
+                                                            <img src="img/like3.png" alt="">
+                                                        </div>
+                                                        <div class="like-card__title text16">
+                                                            <b>196.01</b> бел.руб.
+                                                        </div>
+                                                        <div class="like-card__desc text14">
+                                                            П/ботинки
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="like-card">
+                                                        <div class="like-card__img">
+                                                            <img src="img/like4.png" alt="">
+                                                        </div>
+                                                        <div class="like-card__title text16">
+                                                            <b>196.01</b> бел.руб.
+                                                        </div>
+                                                        <div class="like-card__desc text14">
+                                                            П/ботинки
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="like-card">
+                                                        <div class="like-card__img">
+                                                            <img src="img/like.png" alt="">
+                                                        </div>
+                                                        <div class="like-card__title text16">
+                                                            <b>196.01</b> бел.руб.
+                                                        </div>
+                                                        <div class="like-card__desc text14">
+                                                            П/ботинки
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-button swiper-button-prev">
+                                            <img src="img/prev2.svg" alt="">
+                                        </div>
+                                        <div class="swiper-button swiper-button-next">
+                                            <img src="img/next2.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="may-like">
+                                    <div class="may-like__top">
+                                        <div class="text24 bold-text">
+                                            Вам также может понравиться:
+                                        </div>
+                                    </div>
+                                    <div class="may-like__slider slider">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="like-card">
+                                                        <div class="like-card__img">
+                                                            <img src="img/like.png" alt="">
+                                                        </div>
+                                                        <div class="like-card__title text16">
+                                                            <b>196.01</b> бел.руб.
+                                                        </div>
+                                                        <div class="like-card__desc text14">
+                                                            П/ботинки
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="like-card">
+                                                        <div class="like-card__img">
+                                                            <img src="img/like2.png" alt="">
+                                                        </div>
+                                                        <div class="like-card__title text16">
+                                                            <b>196.01</b> бел.руб.
+                                                        </div>
+                                                        <div class="like-card__desc text14">
+                                                            П/ботинки
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="like-card">
+                                                        <div class="like-card__img">
+                                                            <img src="img/like3.png" alt="">
+                                                        </div>
+                                                        <div class="like-card__title text16">
+                                                            <b>196.01</b> бел.руб.
+                                                        </div>
+                                                        <div class="like-card__desc text14">
+                                                            П/ботинки
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="like-card">
+                                                        <div class="like-card__img">
+                                                            <img src="img/like4.png" alt="">
+                                                        </div>
+                                                        <div class="like-card__title text16">
+                                                            <b>196.01</b> бел.руб.
+                                                        </div>
+                                                        <div class="like-card__desc text14">
+                                                            П/ботинки
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="like-card">
+                                                        <div class="like-card__img">
+                                                            <img src="img/like.png" alt="">
+                                                        </div>
+                                                        <div class="like-card__title text16">
+                                                            <b>196.01</b> бел.руб.
+                                                        </div>
+                                                        <div class="like-card__desc text14">
+                                                            П/ботинки
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-button swiper-button-prev">
+                                            <img src="img/prev2.svg" alt="">
+                                        </div>
+                                        <div class="swiper-button swiper-button-next">
+                                            <img src="img/next2.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <form class="review-form">
+                                <div class="text24 bold-text">
+                                    Оставить отзыв
+                                </div>
+                                <div class="rating">
+                                    <div class="rating-input" data-total-rating="0" data-rating-code="1">
+                                        <div class="rating-input__item" data-rating-value="5">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                            </svg>
+                                        </div>
+                                        <div class="rating-input__item" data-rating-value="4">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                            </svg>
+                                        </div>
+                                        <div class="rating-input__item" data-rating-value="3">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                            </svg>
+                                        </div>
+                                        <div class="rating-input__item" data-rating-value="2">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                            </svg>
+                                        </div>
+                                        <div class="rating-input__item" data-rating-value="1">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                            </svg>
+                                        </div>
+                                        <input class="rating-input__field" type="number" value="0">
+
+
+                                    </div>
+                                </div>
+                                <div class="review-form__fields">
+                                    <fieldset class="fg">
+                                        <label>Достоинства:</label>
+                                        <textarea></textarea>
+                                    </fieldset>
+                                    <fieldset class="fg">
+                                        <label>Недостатки:</label>
+                                        <textarea></textarea>
+                                    </fieldset>
+                                    <fieldset class="fg">
+                                        <label>Комментарий:</label>
+                                        <textarea></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="review-form__nav">
+                                    <button class="review-form__btn m-btn m-btn-red-outline">
+                                        <span>Отправить</span>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="reviews2">
+                                <div class="reviews2__top">
+                                    <div class="text20 bold-text">Отзывы</div>
+                                    <div class="reviews2__nav2 _show-review-form">
+
+                                        <button class="m-btn m-btn-red-outline">
+                                            <span>Оставить отзыв</span>
+                                        </button>
+                                    </div>
+                                    <div class="text18">
+                                        Для написания отзыва необходимо <a href="" class="red-link">авторизоваться</a> на сайте
+                                    </div>
+                                </div>
+                                <div class="reviews2__items">
+                                    <div class="review-item">
+                                        <div class="review-item__user">
+                                            <span class="text18">ЮО</span>
+                                        </div>
+                                        <div class="review-item__content">
+                                            <div class="review-item__top">
+                                                <div class="review-item__info">
+                                                    <div class="text16 bold-text">Юлия Овчинникова</div>
+                                                    <div class="rating">
+                                                        <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                            <div class="rating-input__item" data-rating-value="5">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="4">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="3">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="2">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="1">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                                                </svg>
+                                                            </div>
+                                                            <input class="rating-input__field" type="number" value="0">
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text16 medium-gray-text">
+                                                    07.06.2023 14:45
+                                                </div>
+                                            </div>
+                                            <div class="review-item__advantages">
+                                                <div class="text24 text18-mob bold-text">
+                                                    Достоинства:
+                                                </div>
+                                                <div class="text14">
+                                                    Удобный, устойчивый каблук. Шикарно смотрятся на ноге. Очень красивые
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews2__nav">
+                                    <button class="reviews2__btn m-btn m-btn-red-outline">
+                                        <span>Показать еще</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="catalog-item2__col">
+                            <div class="catalog-item2__content">
+                                <div class="catalog-item2__top">
+                                    <div class="catalog-item2__info">
+                                        <div class="catalog-item2__info-top">
+                                            <div class="text34 bold-text">
+                                                Модель: 271374
+                                            </div>
+                                            <div class="catalog-item2__info-badges">
+                                                <div class="badge">
+                                                    <span class="text18">NEW</span>
+                                                </div>
+                                                <div class="badge _red">
+                                                    <span class="text18">−10%</span>
+                                                </div>
+                                                <div class="badge _green">
+                                                    <span class="text18">Акция</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text18 medium-gray-text">
+                                            Полуботинки мужские
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating-input rating-input--read-only" data-total-rating="4" data-rating-code="1">
+                                                <div class="rating-input__item" data-rating-value="5">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                                    </svg>
+                                                </div>
+                                                <div class="rating-input__item" data-rating-value="4">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                                    </svg>
+                                                </div>
+                                                <div class="rating-input__item" data-rating-value="3">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                                    </svg>
+                                                </div>
+                                                <div class="rating-input__item" data-rating-value="2">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                                    </svg>
+                                                </div>
+                                                <div class="rating-input__item" data-rating-value="1">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.03327 1.65333C8.29584 0.661081 9.70416 0.661083 9.96673 1.65334L11.1192 6.00846C11.2405 6.46716 11.6676 6.77742 12.1413 6.75111L16.6394 6.50133C17.6642 6.44442 18.0994 7.78381 17.2369 8.34015L13.451 10.782C13.0523 11.0392 12.8892 11.5412 13.0606 11.9836L14.6881 16.1844C15.059 17.1414 13.9196 17.9692 13.1239 17.3208L9.63174 14.4748C9.26392 14.1751 8.73608 14.1751 8.36826 14.4748L4.87605 17.3208C4.0804 17.9692 2.94104 17.1414 3.31186 16.1844L4.9394 11.9836C5.11082 11.5412 4.94771 11.0392 4.54896 10.782L0.763114 8.34015C-0.099437 7.78381 0.33576 6.44442 1.36059 6.50133L5.85867 6.75111C6.33244 6.77742 6.75946 6.46716 6.88084 6.00846L8.03327 1.65333Z" fill="#B2B2B2" />
+                                                    </svg>
+                                                </div>
+                                                <input class="rating-input__field" type="number" value="0">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-item2__props">
+
+                                        <div class="product-props__item _right">
+                                            <img src="img/prop3.svg" alt="">
+                                            <span>83</span>
+                                            <div class="hint-block">
+                                                <div class="hint-block__inner">
+                                                    <div class="hint-block__text text14">
+                                                        Высота каблука, мм: <b>0</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-item2__colors">
+                                    <a href="" class="catalog-item2__color _active">
+                                        <img src="img/catalog.webp" alt="">
+                                    </a>
+                                    <a href="" class="catalog-item2__color">
+                                        <img src="img/catalog2.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="catalog-item2__desc">
+                                    <div class="text18">
+                                        Серый / Натуральная кожа нубук+
+                                        натуральная кожа спилок-велюр
+                                    </div>
+                                </div>
+
+
+                                <div class="models models2">
+                                    <div class="shoes">
+                                        <div class="text18 bold-text">
+                                            Варианты коробов:
+                                        </div>
+                                        <div class="shoe-variants">
+                                            <div class="variant-card">
+                                                <div class="variant-card__grid">
+                                                    <div class="variant-card__top">
+                                                        <div class="variant-card__title text16 bold-text ">
+                                                            Мод.: 827297
+                                                        </div>
+                                                        <div class="product-props">
+                                                            <div class="product-props__item _big">
+                                                                <img src="img/prop.svg" alt="">
+                                                                <span>6</span>
+                                                                <div class="hint-block">
+                                                                    <div class="hint-block__inner">
+                                                                        <div class="hint-block__text text14">
+                                                                            Полнота модели: <b>6</b>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-props__item _center">
+                                                                <img src="img/prop2.svg" alt="">
+                                                                <span>8</span>
+                                                                <div class="hint-block">
+                                                                    <div class="hint-block__inner">
+                                                                        <div class="hint-block__text text14">
+                                                                            Количество пар в коробе: <b>8 пар</b>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shoe-table__badges">
+                                                        <div class="badge _red">
+                                                            <span class="text12">−10%</span>
+                                                        </div>
+                                                        <div class="badge">
+                                                            <span class="text12">NEW</span>
+                                                        </div>
+                                                        <div class="badge _brown">
+                                                            <span class="text12">ХИТ!</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shoe-counts">
+                                                        <div class="text12 medium-gray-text extra-bold-text">
+                                                            41−1, 42−3, 43−3, 45−1
+                                                        </div>
+                                                        <div class="shoe-counts__nums">
+                                                            <div class='cartcalc'>
+                                                                <button class='ccalc-minus'>
+                                                                    <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M0.552 0.956H4.752V1.628H0.552V0.956Z" fill="#282828" />
+                                                                    </svg>
+                                                                </button>
+                                                                <input type='text' value='1' readonly>
+                                                                <button class='ccalc-plus'>
+                                                                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M4.752 2.628H2.988V4.428H2.316V2.628H0.552V1.956H2.316V0.156H2.988V1.956H4.752V2.628Z" fill="#282828" />
+                                                                    </svg>
+                                                                </button>
+
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="variant-card">
+                                                <div class="variant-card__grid">
+                                                    <div class="variant-card__top">
+                                                        <div class="variant-card__title text16 bold-text _viewed">
+                                                            Мод.: 827297
+                                                        </div>
+                                                        <div class="product-props">
+                                                            <div class="product-props__item _big">
+                                                                <img src="img/prop.svg" alt="">
+                                                                <span>6</span>
+                                                                <div class="hint-block">
+                                                                    <div class="hint-block__inner">
+                                                                        <div class="hint-block__text text14">
+                                                                            Полнота модели: <b>6</b>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-props__item _center">
+                                                                <img src="img/prop2.svg" alt="">
+                                                                <span>8</span>
+                                                                <div class="hint-block">
+                                                                    <div class="hint-block__inner">
+                                                                        <div class="hint-block__text text14">
+                                                                            Количество пар в коробе: <b>8 пар</b>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shoe-table__badges">
+                                                        <div class="badge _red">
+                                                            <span class="text12">−10%</span>
+                                                        </div>
+                                                        <div class="badge">
+                                                            <span class="text12">NEW</span>
+                                                        </div>
+                                                        <div class="badge _brown">
+                                                            <span class="text12">ХИТ!</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shoe-counts">
+                                                        <div class="text12 medium-gray-text extra-bold-text">
+                                                            41−1, 42−3, 43−3, 45−1
+                                                        </div>
+                                                        <div class="shoe-counts__nums">
+                                                            <div class='cartcalc'>
+                                                                <button class='ccalc-minus'>
+                                                                    <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M0.552 0.956H4.752V1.628H0.552V0.956Z" fill="#282828" />
+                                                                    </svg>
+                                                                </button>
+                                                                <input type='text' value='1' readonly>
+                                                                <button class='ccalc-plus'>
+                                                                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M4.752 2.628H2.988V4.428H2.316V2.628H0.552V1.956H2.316V0.156H2.988V1.956H4.752V2.628Z" fill="#282828" />
+                                                                    </svg>
+                                                                </button>
+
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="variant-card">
+                                                <div class="variant-card__grid">
+                                                    <div class="variant-card__top">
+                                                        <div class="variant-card__title text16 bold-text ">
+                                                            Мод.: 827297
+                                                        </div>
+                                                        <div class="product-props">
+                                                            <div class="product-props__item _big">
+                                                                <img src="img/prop.svg" alt="">
+                                                                <span>6</span>
+                                                                <div class="hint-block">
+                                                                    <div class="hint-block__inner">
+                                                                        <div class="hint-block__text text14">
+                                                                            Полнота модели: <b>6</b>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-props__item _center">
+                                                                <img src="img/prop2.svg" alt="">
+                                                                <span>8</span>
+                                                                <div class="hint-block">
+                                                                    <div class="hint-block__inner">
+                                                                        <div class="hint-block__text text14">
+                                                                            Количество пар в коробе: <b>8 пар</b>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shoe-table__badges">
+                                                        <div class="badge _red">
+                                                            <span class="text12">−10%</span>
+                                                        </div>
+                                                        <div class="badge">
+                                                            <span class="text12">NEW</span>
+                                                        </div>
+                                                        <div class="badge _brown">
+                                                            <span class="text12">ХИТ!</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shoe-counts">
+                                                        <div class="text12 medium-gray-text extra-bold-text">
+                                                            41−1, 42−3, 43−3, 45−1
+                                                        </div>
+                                                        <div class="shoe-counts__nums">
+                                                            <div class='cartcalc'>
+                                                                <button class='ccalc-minus'>
+                                                                    <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M0.552 0.956H4.752V1.628H0.552V0.956Z" fill="#282828" />
+                                                                    </svg>
+                                                                </button>
+                                                                <input type='text' value='1' readonly>
+                                                                <button class='ccalc-plus'>
+                                                                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M4.752 2.628H2.988V4.428H2.316V2.628H0.552V1.956H2.316V0.156H2.988V1.956H4.752V2.628Z" fill="#282828" />
+                                                                    </svg>
+                                                                </button>
+
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="variant-card">
+                                                <div class="variant-card__grid">
+                                                    <div class="variant-card__top">
+                                                        <div class="variant-card__title text16 bold-text ">
+                                                            Мод.: 827297
+                                                        </div>
+                                                        <div class="product-props">
+                                                            <div class="product-props__item _big">
+                                                                <img src="img/prop.svg" alt="">
+                                                                <span>6</span>
+                                                                <div class="hint-block">
+                                                                    <div class="hint-block__inner">
+                                                                        <div class="hint-block__text text14">
+                                                                            Полнота модели: <b>6</b>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-props__item _center">
+                                                                <img src="img/prop2.svg" alt="">
+                                                                <span>8</span>
+                                                                <div class="hint-block">
+                                                                    <div class="hint-block__inner">
+                                                                        <div class="hint-block__text text14">
+                                                                            Количество пар в коробе: <b>8 пар</b>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shoe-table__badges">
+                                                        <div class="badge _red">
+                                                            <span class="text12">−10%</span>
+                                                        </div>
+                                                        <div class="badge">
+                                                            <span class="text12">NEW</span>
+                                                        </div>
+                                                        <div class="badge _brown">
+                                                            <span class="text12">ХИТ!</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shoe-counts">
+                                                        <div class="text12 medium-gray-text extra-bold-text">
+                                                            41−1, 42−3, 43−3, 45−1
+                                                        </div>
+                                                        <div class="shoe-counts__nums">
+                                                            <div class='cartcalc'>
+                                                                <button class='ccalc-minus'>
+                                                                    <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M0.552 0.956H4.752V1.628H0.552V0.956Z" fill="#282828" />
+                                                                    </svg>
+                                                                </button>
+                                                                <input type='text' value='1' readonly>
+                                                                <button class='ccalc-plus'>
+                                                                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M4.752 2.628H2.988V4.428H2.316V2.628H0.552V1.956H2.316V0.156H2.988V1.956H4.752V2.628Z" fill="#282828" />
+                                                                    </svg>
+                                                                </button>
+
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="variant-card">
+                                                <div class="variant-card__grid">
+                                                    <div class="variant-card__top">
+                                                        <div class="variant-card__title text16 bold-text ">
+                                                            Мод.: 827297
+                                                        </div>
+                                                        <div class="product-props">
+                                                            <div class="product-props__item _big">
+                                                                <img src="img/prop.svg" alt="">
+                                                                <span>6</span>
+                                                                <div class="hint-block">
+                                                                    <div class="hint-block__inner">
+                                                                        <div class="hint-block__text text14">
+                                                                            Полнота модели: <b>6</b>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-props__item _center">
+                                                                <img src="img/prop2.svg" alt="">
+                                                                <span>8</span>
+                                                                <div class="hint-block">
+                                                                    <div class="hint-block__inner">
+                                                                        <div class="hint-block__text text14">
+                                                                            Количество пар в коробе: <b>8 пар</b>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shoe-table__badges">
+                                                        <div class="badge _red">
+                                                            <span class="text12">−10%</span>
+                                                        </div>
+                                                        <div class="badge">
+                                                            <span class="text12">NEW</span>
+                                                        </div>
+                                                        <div class="badge _brown">
+                                                            <span class="text12">ХИТ!</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shoe-counts">
+                                                        <div class="text12 medium-gray-text extra-bold-text">
+                                                            41−1, 42−3, 43−3, 45−1
+                                                        </div>
+                                                        <div class="shoe-counts__nums">
+                                                            <div class='cartcalc'>
+                                                                <button class='ccalc-minus'>
+                                                                    <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M0.552 0.956H4.752V1.628H0.552V0.956Z" fill="#282828" />
+                                                                    </svg>
+                                                                </button>
+                                                                <input type='text' value='1' readonly>
+                                                                <button class='ccalc-plus'>
+                                                                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M4.752 2.628H2.988V4.428H2.316V2.628H0.552V1.956H2.316V0.156H2.988V1.956H4.752V2.628Z" fill="#282828" />
+                                                                    </svg>
+                                                                </button>
+
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="shoe-variants__sum">
+                                            <div class="text14 medium-text">
+                                                <span class="extra-bold-text">40</span> пар в 5 коробах
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="variant-sum _type2">
+                                        <div class="variant-sum__col">
+                                            <div class="variant-sum__nav">
+                                                <button class="variant-sum__btn m-btn m-btn-red-outline">
+                                                    <span>В заказ</span>
+                                                </button>
+                                                <button class="variant-sum__btn m-btn m-btn-red-outline">
+                                                    <span>Перейти в заказ</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="variant-sum__col">
+                                            <div class="text14 medium-text">
+                                                После регистраци Вам будет доступен актуальный каталог с ценами и возможностью сделать Заказ
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="variant-hint">
+                                        <div class="text12 semi-bold-text">
+                                            * данная модель поставляется в двух отдельных коробах-упаковках со специальной маркировкой.
+                                            <a href="">Подробнее об упаковке</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <div class="text18 bold-text">
+                                        Информация о товаре:
+                                    </div>
+                                    <div class="product-info__items">
+                                        <div class="product-info__item text14">
+                                            <span class="light-gray-text">Вид обуви:</span>
+                                            <span>П/ботинки</span>
+                                        </div>
+                                        <div class="product-info__item text14">
+                                            <span class="light-gray-text">Сезон:</span>
+                                            <span>Круглосезонная</span>
+                                        </div>
+                                        <div class="product-info__item text14">
+                                            <span class="light-gray-text">Материал верха:</span>
+                                            <span>Натуральная кожа нубук+натуральная кожа спилок-велюр</span>
+                                        </div>
+                                        <div class="product-info__item text14">
+                                            <span class="light-gray-text">Материал подкладки:</span>
+                                            <span>Текстильный материал + натуральная кожа</span>
+                                        </div>
+                                        <div class="product-info__item text14">
+                                            <span class="light-gray-text">Материал подошвы:</span>
+                                            <span>Термоэластопласт (ТЭП)</span>
+                                        </div>
+                                        <div class="product-info__item text14">
+                                            <span class="light-gray-text">Застежка:</span>
+                                            <span>шнурок</span>
+                                        </div>
+                                        <div class="product-info__item text14">
+                                            <span class="light-gray-text">Высота каблука, мм:</span>
+                                            <span>15</span>
+                                        </div>
+                                        <div class="product-info__item text14">
+                                            <span class="light-gray-text">Высота подошвы, мм:</span>
+                                            <span>5</span>
+                                        </div>
+                                        <div class="product-info__item text14">
+                                            <span class="light-gray-text">Полнота:</span>
+                                            <span>8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-info__show">
+                                        <div class="text18 bold-text">
+                                            Подробная информация
+                                        </div>
+                                        <button class="product-info__btn">
+                                            <img src="img/arrow2.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="product-info__hidden">
+                                        <div class="product-info__items">
+                                            <div class="product-info__item text14">
+                                                <span class="light-gray-text">Коллекця:</span>
+                                                <span>Весна-лето 2023</span>
+                                            </div>
+                                            <div class="product-info__item text14">
+                                                <span class="light-gray-text">Стиль:</span>
+                                                <span>Повседневный</span>
+                                            </div>
+                                            <div class="product-info__item text14">
+                                                <span class="light-gray-text">Бренд:</span>
+                                                <span>Marko</span>
+                                            </div>
+                                            <div class="product-info__item text14">
+                                                <span class="light-gray-text">Страна производитель:</span>
+                                                <span>Беларусь</span>
+                                            </div>
+                                            <div class="product-info__item text14">
+                                                <span class="light-gray-text">Метод крепления:</span>
+                                                <span>Клеевой</span>
+                                            </div>
+                                            <div class="product-info__item text14">
+                                                <span class="light-gray-text">Предприятие:</span>
+                                                <span>Общество с ограниченной ответственностью Управляющая компания холдинга «Белорусская кожевенно-обувная компания «Марко»</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-info__show">
+                                        <div class="text18 bold-text">
+                                            Описание
+                                        </div>
+                                        <button class="product-info__btn">
+                                            <img src="img/arrow2.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="product-info__hidden">
+                                        <div class="product-info__text">
+                                            <p>Общество с ограниченной ответственностью «Управляющая компания холдинга «Белорусская кожевенно-обувная компания «Марко», крупнейший производитель обуви в Республике Беларусь, было основано в 1991 году. Торговый знак «Марко» получил государственную регистрацию в 1996 году. В 2008 году предприятие одним из первых в республике получило статус «Добросовестный участник внешнеэкономической деятельности».</p>
+                                            <p>На экране вашего устройства цвет товара может незначительно отличаться от оригинала</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="subscribe">
+                <div class="container">
+                    <div class="subscribe__inner">
+                        <div class="subscribe-info">
+                            <div class="text32">Нравится наша продукция?</div>
+                            <div class="text18">Подпишитесь и будьте первыми в курсе самых последних событий.</div>
+                        </div>
+                        <form class="subscribe-form">
+                            <div class="subscribe-form__top">
+                                <fieldset class="subscribe-form__field">
+                                    <input type="email" placeholder="Email">
+                                </fieldset>
+                                <button class="subscribe-form__btn m-btn m-btn-red">
+                                    <span class="_view1">Подписаться</span>
+                                    <span class="_view2">Ок</span>
+                                </button>
+                            </div>
+                            <div class="subscribe-form__check m-check">
+                                <input type="checkbox">
+                                <label>
+                                    <span>
+                            Даю согласие на обработку моих персональных данных с целью направления мне рекламной информации посредством электронной почты (e-mail-рассылка) в соответствии с
+                            <a href="">Политикой в области обработки персональных данных</a> , также подтверждаю, что до дачи согласия мне разъяснены и понятны
+                            <a href="">права, связанные с обработкой моих персональных данных, механизм их реализации, а также последствия дачи согласия или отказа в даче такого согласия</a> . *
+                        </span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe">
+                <div class="container">
+                    <div class="subscribe__inner">
+                        <div class="subscribe-info">
+                            <div class="text32">Нравится наша продукция?</div>
+                            <div class="text18">Подпишитесь и будьте первыми в курсе самых последних событий.</div>
+                        </div>
+                        <div class="subscribe__response">
+                            <div class="subscribe__badge">
+                                <img src="img/check2.svg" alt="">
+                                <span class="text18">Поздравляем! Вы подписаны</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe">
+                <div class="container">
+                    <div class="subscribe__inner">
+                        <div class="subscribe-info">
+                            <div class="text32">Нравится наша продукция?</div>
+                            <div class="text18">Подпишитесь и будьте первыми в курсе самых последних событий.</div>
+                        </div>
+                        <div class="subscribe__response">
+                            <div class="subscribe__badge _red">
+                                <img src="img/slash.svg" alt="">
+                                <span class="text18">Ошибка! Вы уже были подписаны ранее</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__col">
+                        <a href="" class="footer__logo">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                        <div class="footer__c">
+                            <i class="footer__c-icon">
+                    <img src="img/c.svg" alt="">
+                </i>
+                            <span class="text18">ООО «Управляющая компания холдинга «Белорусская кожевенно-обувная компания «Марко»</span>
+                        </div>
+                        <div class="footer__address">
+                            <span class="text18">
+                    Республика Беларусь, г. Витебск 210033, <br>пр-т Фрунзе, д. 85
+                </span>
+                        </div>
+                        <div class="footer-contacts">
+                            <div class="text18 bold-text">
+                                Контактная информация
+                            </div>
+                            <div class="footer-contacts__items">
+                                <div class="footer-contacts__item">
+                                    <span class="text18">Крупно-оптовые закупки:</span>
+                                    <a href="" class="text18">sales@optmarko.by</a>
+                                </div>
+                                <div class="footer-contacts__item">
+                                    <span class="text18">По вопросам работы сайта:</span>
+                                    <a href="" class="text18">marketing@marko.by</a>
+                                </div>
+                                <div class="footer-contacts__item">
+                                    <span class="text18">Мы в социальных сетях:</span>
+                                    <div class="social">
+                                        <a href="" class="social__item">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.3731 10.9494C15.3731 13.9135 12.9712 16.3155 10.0071 16.3155C7.04305 16.3155 4.64109 13.9135 4.64109 10.9494C4.64109 9.85468 4.97115 8.83834 5.53324 7.9854H0.0234375V16.2926C0.0234375 18.8318 2.08226 20.8906 4.62148 20.8906H15.4189C17.9581 20.8906 20.0169 18.8318 20.0169 16.2926V7.9854H14.4744C15.0398 8.8318 15.3731 9.85468 15.3731 10.9494ZM10.0234 14.7828C12.1411 14.7828 13.8568 13.0671 13.8568 10.9494C13.8568 8.8318 12.1411 7.11612 10.0234 7.11612C7.90579 7.11612 6.1901 8.8318 6.1901 10.9494C6.1901 13.0671 7.90579 14.7828 10.0234 14.7828ZM7.92867 8.84814C8.49076 8.29259 9.23586 7.97886 10.0234 7.97886C10.8176 7.97886 11.5627 8.28605 12.1247 8.84814C12.6868 9.41023 12.994 10.1553 12.994 10.9494C12.994 11.7436 12.6868 12.4887 12.1247 13.0508C11.5627 13.6128 10.8176 13.92 10.0234 13.92C9.22932 13.92 8.48422 13.6128 7.92867 13.0508C7.36657 12.4887 7.05939 11.7436 7.05939 10.9494C7.05939 10.1553 7.36657 9.41023 7.92867 8.84814ZM15.4254 0.890625H4.62148C4.37965 0.890625 4.13782 0.906965 3.89925 0.942913H4.63782V5.58344H3.76854V0.969056C3.46788 1.02134 3.17703 1.10958 2.90579 1.22396V5.58997H2.03978V1.68474C0.820823 2.51154 0.0234375 3.90697 0.0234375 5.48866V7.11612H6.24893C7.21952 6.1684 8.53978 5.58344 10.0071 5.58344C11.4679 5.58344 12.7947 6.1684 13.7653 7.11612H20.0234V5.48866C20.0234 2.94945 17.9646 0.890625 15.4254 0.890625ZM17.6378 5.58344H15.3731V3.31873H17.6378V5.58344Z" fill="#282828" />
+                                            </svg>
+                                        </a>
+                                        <a href="" class="social__item">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.5057 14.4039C19.0224 13.9205 17.0518 11.857 17.0518 11.857C16.7544 11.4667 16.6614 10.9833 16.9589 10.5929C17.5538 9.81215 18.632 8.43649 19.0224 7.84161C19.6172 7.06083 20.6955 5.38774 19.2269 5.38774H15.9922C15.6948 5.38774 15.5089 5.59223 15.3044 5.77813C15.3044 5.77813 14.0403 8.12046 13.6313 8.90124C12.5531 11.0577 11.7723 10.3698 11.7723 9.38458V5.98262C11.7723 5.38774 11.2889 4.9044 10.6941 4.9044H8.25879C7.57096 4.81145 6.99467 5.20184 6.49274 5.68518C6.49274 5.68518 7.75686 5.48069 7.75686 7.15378V9.70061C7.75686 10.091 7.45942 10.3884 7.06903 10.3884C6.86454 10.3884 6.67864 10.2955 6.47415 10.1839C5.48888 8.80829 4.61516 7.33968 4.02028 5.77813C3.92733 5.57364 3.62989 5.38774 3.4254 5.38774H0.506776C0.227927 5.38774 0.0234375 5.57364 0.0234375 5.87108C0.0234375 5.96403 0.0234375 5.96403 0.0234375 6.07557C0.897165 8.52944 4.7267 16.1699 9.13251 16.1699H10.9915C11.3819 16.1699 11.6793 15.8725 11.6793 15.4821V14.4039C11.6793 14.0135 11.9768 13.716 12.3672 13.716C12.5717 13.716 12.7576 13.809 12.8505 13.9205L15.0069 15.9654C15.2114 16.1699 15.4903 16.2629 15.6948 16.2629H18.632C20.3051 16.1699 20.3051 15.1846 19.5057 14.4039Z" fill="#282828" />
+                                            </svg>
+                                        </a>
+                                        <a href="" class="social__item">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0303 10.2285C12.6378 10.2285 14.6992 8.15342 14.6992 5.55957C14.6856 2.96571 12.6241 0.890625 10.0303 0.890625C7.42275 0.890625 5.36132 2.96571 5.36132 5.55957C5.36132 8.15342 7.42275 10.2285 10.0303 10.2285ZM10.0303 3.2251C11.2999 3.2251 12.3647 4.28994 12.3647 5.55957C12.3647 6.82919 11.2999 7.89404 10.0303 7.89404C8.76064 7.89404 7.69579 6.82919 7.69579 5.55957C7.69579 4.28994 8.76064 3.2251 10.0303 3.2251ZM14.6992 10.8975C14.0303 10.8975 12.6924 12.2353 10.0303 12.2353C7.36815 12.2353 6.03026 10.8975 5.36132 10.8975C4.62412 10.8975 4.02344 11.4981 4.02344 12.2217C4.02344 12.8906 4.41934 13.2183 4.69238 13.3548C5.49784 13.819 8.02344 14.8838 8.02344 14.8838L5.15654 18.4879C5.15654 18.4879 4.62412 19.0886 4.62412 19.5527C4.62412 20.2899 5.2248 20.8906 5.962 20.8906C6.63095 20.8906 6.95859 20.4265 6.95859 20.4265C6.95859 20.4265 9.962 16.8224 9.962 16.8906L12.9654 20.4265C12.9654 20.4265 13.3067 20.8906 13.962 20.8906C14.6992 20.8906 15.2999 20.2899 15.2999 19.5527C15.2999 19.1568 14.7675 18.4879 14.7675 18.4879L11.9006 14.8838C11.9006 14.8838 14.4398 13.819 15.2316 13.3548C15.5047 13.15 15.9006 12.8906 15.9006 12.2217C16.0234 11.4981 15.4228 10.8975 14.6992 10.8975Z" fill="#282828" />
+                                            </svg>
+                                        </a>
+                                        <a href="" class="social__item">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.1563 7.36501V5.2929C11.1563 4.50353 11.6572 4.33655 12.0291 4.33655C12.401 4.33655 14.2682 4.33655 14.2682 4.33655V0.890625H11.2018C7.80143 0.890625 7.01205 3.46368 7.01205 5.08038V7.36501H5.02344V10.8944H7.01205C7.01205 15.4181 7.01205 20.8906 7.01205 20.8906H11.1639C11.1639 20.8906 11.1639 15.3726 11.1639 10.8944H13.9874L14.3593 7.36501H11.1563Z" fill="#282828" />
+                                            </svg>
+                                        </a>
+                                        <a href="" class="social__item">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.6726 6.11973C19.4249 5.04646 18.558 4.26214 17.5054 4.15894C15.0286 3.89063 12.5105 3.89062 10.0131 3.89062C7.5157 3.89062 4.99764 3.89063 2.52086 4.15894C1.46823 4.28278 0.601353 5.0671 0.353675 6.11973C0.0234375 7.64708 0.0234375 9.29826 0.0234375 10.8462C0.0234375 12.4149 0.0234375 14.0661 0.374315 15.5728C0.621993 16.646 1.48887 17.4304 2.5415 17.5336C5.01828 17.8019 7.53634 17.8019 10.0338 17.8019C12.5312 17.8019 15.0492 17.8019 17.526 17.5336C18.5786 17.4097 19.4455 16.6254 19.6932 15.5728C20.0441 14.0661 20.0441 12.4149 20.0441 10.8462C20.0234 9.29826 20.0234 7.64708 19.6726 6.11973ZM7.43314 13.9629C7.43314 11.7544 7.43314 9.56658 7.43314 7.35812C9.55904 8.47267 11.6643 9.56658 13.7902 10.6811C11.6643 11.7544 9.55904 12.8483 7.43314 13.9629Z" fill="#282828" />
+                                            </svg>
+                                        </a>
+                                        <a href="" class="social__item">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0234 10.8906C20.0234 16.4135 15.5463 20.8906 10.0234 20.8906C4.50059 20.8906 0.0234375 16.4135 0.0234375 10.8906C0.0234375 5.36778 4.50059 0.890625 10.0234 0.890625C15.5463 0.890625 20.0234 5.36778 20.0234 10.8906ZM10.4514 8.18697L3.71721 10.9616L3.71654 10.9616C2.53154 11.424 3.22521 11.8575 3.22521 11.8575C3.22521 11.8575 4.23679 12.2043 5.10379 12.4644C5.97079 12.7245 6.43329 12.4355 6.43329 12.4355L10.5085 9.68981C11.9535 8.70706 11.6067 9.51631 11.2599 9.86314C10.5085 10.6146 9.26571 11.7996 8.22521 12.7533C7.76279 13.1579 7.99396 13.5048 8.19629 13.6781C8.78457 14.1759 10.1698 15.081 10.7993 15.4922C10.9739 15.6063 11.0904 15.6824 11.1155 15.7012C11.2599 15.8169 12.0683 16.3371 12.5605 16.2215C13.0526 16.1059 13.1105 15.4411 13.1105 15.4411L13.833 10.9036C13.8967 10.4819 13.9603 10.0689 14.0198 9.68343C14.1762 8.66878 14.3033 7.84433 14.3243 7.55114C14.411 6.56856 13.3705 6.97314 13.3705 6.97314C13.3705 6.97314 11.1161 7.89797 10.4514 8.18697Z" fill="#282828" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="text24 bold-text">
+                            Холдинг
+                        </div>
+                        <div class="footer__links">
+                            <a href="" class="footer__link"><span class="text18">О холдинге</span></a>
+                            <a href="" class="footer__link"><span class="text18">Выпускаемая продукция</span></a>
+                            <a href="" class="footer__link"><span class="text18">Портфель брендов</span></a>
+                            <a href="" class="footer__link"><span class="text18">Технологии</span></a>
+                            <a href="" class="footer__link"><span class="text18">Доверие и партнерство</span></a>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="text24 bold-text">
+                            Каталог
+                        </div>
+                        <div class="footer__links">
+                            <a href="" class="footer__link"><span class="text18">Женская</span></a>
+                            <a href="" class="footer__link"><span class="text18">Мужская</span></a>
+                            <a href="" class="footer__link"><span class="text18">Девочкам</span></a>
+                            <a href="" class="footer__link"><span class="text18">Мальчикам</span></a>
+                            <a href="" class="footer__link"><span class="text18">Малышам</span></a>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="text24 bold-text">
+                            Сотрудничество
+                        </div>
+                        <div class="footer__links">
+                            <a href="" class="footer__link"><span class="text18">Условия работы</span></a>
+                            <a href="" class="footer__link"><span class="text18">Доставка и самовывоз</span></a>
+                            <a href="" class="footer__link"><span class="text18">Франчайзинговое предложение</span></a>
+                            <a href="" class="footer__link"><span class="text18">Вопрос-ответ</span></a>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="text24 bold-text">
+                            Полезные рубрики
+                        </div>
+                        <div class="footer__links">
+                            <a href="" class="footer__link"><span class="text18">Обувь. Основы</span></a>
+                            <a href="" class="footer__link"><span class="text18">Технологии</span></a>
+                            <a href="" class="footer__link"><span class="text18">Материалы верха</span></a>
+                            <a href="" class="footer__link"><span class="text18">Материалы подкладки/стельки</span></a>
+                            <a href="" class="footer__link"><span class="text18">Подошвы</span></a>
+                            <a href="" class="footer__link"><span class="text18">Памятки</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="scroll-up m-btn-red">
+                <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 13L13 1L1 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+        </footer>
+    </div>
+
+
+    <div class="modal login-modal" id="loginModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6.5L6 18.5M6 6.5L18 18.5" stroke="#B2B2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="modal__scroll">
+                <div class="modal__title text35 bold-text">
+                    Авторизация
+                </div>
+                <form class="auth-form">
+                    <div class="form-items _no-border">
+                        <div class="form-item">
+                            <div class="form-item__title">
+                                <div class="text14">
+                                    Электронная почта:
+                                </div>
+                            </div>
+                            <div class="form-item__content">
+                                <div class="form-item__fields">
+                                    <fieldset class="fg _col3">
+                                        <input type="text">
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item__title">
+                                <div class="text14">
+                                    Пароль
+                                </div>
+                            </div>
+                            <div class="form-item__content">
+                                <div class="form-item__fields">
+                                    <fieldset class="fg _col3">
+                                        <input type="password">
+                                        <button type="button" class="pass-toggle">
+                                            <svg class="_view1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <svg class="_view2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.9 4.24C10.5883 4.07888 11.2931 3.99834 12 4C19 4 23 12 23 12C22.393 13.1356 21.6691 14.2047 20.84 15.19M14.12 14.12C13.8454 14.4147 13.5141 14.6512 13.1462 14.8151C12.7782 14.9791 12.3809 15.0673 11.9781 15.0744C11.5753 15.0815 11.1752 15.0074 10.8016 14.8565C10.4281 14.7056 10.0887 14.481 9.80385 14.1962C9.51897 13.9113 9.29439 13.5719 9.14351 13.1984C8.99262 12.8248 8.91853 12.4247 8.92563 12.0219C8.93274 11.6191 9.02091 11.2218 9.18488 10.8538C9.34884 10.4859 9.58525 10.1546 9.88 9.88M1 1L23 23M17.94 17.94C16.2306 19.243 14.1491 19.9649 12 20C5 20 1 12 1 12C2.24389 9.6819 3.96914 7.65661 6.06 6.06L17.94 17.94Z" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item__title _hide-mob"></div>
+                            <div class="form-item__links">
+                                <a href="" class="form-item__link">
+                                    <span class="text18">Забыли пароль?</span>
+                                </a>
+                                <a href="" class="form-item__link">
+                                    <span class="text18">Регистрация</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auth-form__nav">
+                        <button class="form-item__btn m-btn m-btn-red-outline">
+                            <span>Войти</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal login-modal" id="regModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6.5L6 18.5M6 6.5L18 18.5" stroke="#B2B2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="modal__scroll">
+                <div class="modal__title text35 bold-text">
+                    Заказать обратный звонок
+                </div>
+                <form class="auth-form">
+                    <div class="form-items">
+                        <div class="form-item">
+                            <div class="form-item__title">
+                                <div class="text14">
+                                    Контактное лицо:
+                                </div>
+                            </div>
+                            <div class="form-item__content">
+                                <div class="form-item__fields">
+                                    <fieldset class="fg _col3">
+                                        <input type="text">
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item__title">
+                                <div class="text14">
+                                    Компания:
+                                </div>
+                            </div>
+                            <div class="form-item__content">
+                                <div class="form-item__fields">
+                                    <fieldset class="fg _col3">
+                                        <input type="text">
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item__title">
+                                <div class="text14">
+                                    Должность:
+                                </div>
+                            </div>
+                            <div class="form-item__content">
+                                <div class="form-item__fields">
+                                    <fieldset class="fg _col3">
+                                        <input type="text">
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-items">
+                        <div class="form-item">
+                            <div class="form-item__title">
+                                <div class="text14">
+                                    Контактный телефон:
+                                </div>
+                            </div>
+                            <div class="form-item__content">
+                                <div class="form-item__fields">
+                                    <fieldset class="fg">
+                                        <input type="tel">
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item__title">
+                                <div class="text14">
+                                    Электронная почта:
+                                </div>
+                            </div>
+                            <div class="form-item__content">
+                                <div class="form-item__fields">
+                                    <fieldset class="fg _col3">
+                                        <input type="email">
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-check _black">
+                        <input type="checkbox">
+                        <label>
+                            <span>
+                            Отправляя форму обратной связи я соглашаюсь с <a href="">правилами сбора и хранения персональных данных</a>
+                        </span>
+                        </label>
+                    </div>
+                    <div class="auth-form__nav">
+                        <button class="form-item__btn m-btn m-btn-red-outline">
+                            <span>Отправить заявку</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal client-modal" id="clientModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6.5L6 18.5M6 6.5L18 18.5" stroke="#B2B2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="modal__scroll">
+                <div class="modal__title text35 bold-text">
+                    Уважаемый Клиент!
+                </div>
+                <div class="modal__desc text17">
+                    Просим обратить внимание, что при условии успешной регистрации, на указанный Вам электронныф адрес будет выслан доступ
+                    <br>
+                в Ваш личный кабинет.
+                </div>
+                <div class="auth-form__nav">
+                    <button class="form-item__btn m-btn m-btn-red-outline">
+                        <span>Продолжить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookie-modal _active">
+        <button class="cookie-modal__close _close-cookie">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke="#B2B2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="text24 bold-text">
+            Сайт использует файлы cookies!
+        </div>
+        <div class="text16">
+            Сайт использует файлы cookies. Оставаясь на этом сайте, вы соглашаетесь с условиями использования файлов cookies.
+            <a href="" class="red-link2">Подробнее</a>
+        </div>
+        <div class="cookie-modal__nav">
+            <button class="cookie-modal__btn _close-cookie m-btn m-btn-red-outline">
+                <span>Понятно</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- <div class="modal-backdrop show"></div> -->
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
