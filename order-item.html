@@ -11,7 +11,7 @@
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
     <!--    <link rel="preload" href="fonts/Akrobat.woff2" as="font" type="font/woff2" crossorigin>-->
-    <title>Каталог</title>
+    <title>Состав заказа</title>
 </head>
 
 
@@ -942,890 +942,599 @@
         <div class="container">
             <div class="breadcrumbs">
                 <a href="" class="breadcrumbs__item">Главная</a>
+                <a href="" class="breadcrumbs__item">Личный кабиинет </a>
                 <span class="breadcrumbs__item">Текущий заказ</span>
             </div>
         </div>
         <main class="content">
-            <section class="cart">
+
+            <section class="profile">
                 <div class="container">
+                    <div class="profile__inner">
+                        <div class="profile__sidebar">
+                            <div class="profile-nav">
+                                <div class="profile-nav__mob">
+                                    <div class="profile-nav__current text18"></div>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 7.5L10 12.5L15 7.5" stroke="#667085" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="profile-nav__items">
+                                    <div class="profile-nav__item">
+                                        <div class="profile-nav__top">
+                                            <a href="" class="profile-nav__link ">
+                                                Уведомления
+                                            </a>
+                                            <div class="profile-nav__count">
+                                                <span>5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-nav__item">
+                                        <div class="profile-nav__top">
+                                            <a href="" class="profile-nav__link">
+                                                Заказы
+                                            </a>
+                                        </div>
+                                        <div class="profile-nav__bottom">
+                                            <div class="profile-nav__sublinks">
+                                                <a href="" class="profile-nav__sublink _active">Текущий заказ</a>
+                                                <a href="" class="profile-nav__sublink ">История заказов</a>
+                                                <a href="" class="profile-nav__sublink ">Отложенные заказы</a>
+                                                <a href="" class="profile-nav__sublink ">Архив заказов</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-nav__item">
+                                        <div class="profile-nav__top">
+                                            <a href="" class="profile-nav__link ">
+                                                Статистика по заказам
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="profile-nav__item">
+                                        <div class="profile-nav__top">
+                                            <a href="" class="profile-nav__link ">
+                                                Документы
+                                            </a>
+                                            <div class="profile-nav__count">
+                                                <span>!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-nav__item">
+                                        <div class="profile-nav__top">
+                                            <a href="" class="profile-nav__link ">
+                                                Профиль
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <div class="page-title">
-                        <h1 class="text34 bold-text">
-                            Текущий заказ
-                        </h1>
-                        <div>
-                            <div class="product-info__item text14">
-                                <span class="light-gray-text">Покупатель:</span>
-                                <span>ООО «Степ бай Степ Шуз»</span>
-                            </div>
-                            <div class="product-info__item text14">
-                                <span class="light-gray-text">Адрес доставки:</span>
-                                <span>Смоленск, ул. Большая советская, 41/18</span>
-                            </div>
-                            <div class="product-info__item text14">
-                                <span class="light-gray-text">Ориентировочная стоимость доставки:</span>
-                                <span><b>849</b> бел.руб.</span>
-                            </div>
                         </div>
-                    </div>
+                        <div class="profile__content">
+                            <div class="order-item">
+                                <div class="order-detail__top">
+                                    <div class="page-title">
+                                        <h1 class="text34 lh150 bold-text">
+                                            Состав заказа
+                                        </h1>
+                                    </div>
 
-                    <div class="cart-table cart-table2">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <div class="m-check">
-                                            <input class="head-check" type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </th>
-                                    <th><span>Фото</span></th>
-                                    <th><span>Артикул</span></th>
-                                    <th><span>Размер</span></th>
-                                    <th><span>Описание</span></th>
-                                    <th><span>Цена</span></th>
-                                    <th><span>Количество коробов/пар</span></th>
-                                    <th><span>Стомость, без НДС</span></th>
-                                    <th><span>Стоимость с НДС</span></th>
-                                    <th><span>Стоимость, итого</span></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="cart-table__title">
-                                    <td colspan="11">
-                                        <div class="text18 bold-text">
-                                            Модели в коробах
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="m-check">
-                                            <input class="row-check" type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="cart-table__img">
-                                            <img src="img/catalog.webp" alt="">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Модель:
+                                    <div class="order-detail__links">
+                                        <a href="" class="order-detail__link _active">
+                                            <span class="order-detail__link-title _view1">Состав заказа</span>
+                                            <span class="order-detail__link-title _view2">Состав</span>
+                                        </a>
+                                        <a href="" class="order-detail__link ">
+                                            <span class="order-detail__link-title _view1">Детализация заказа</span>
+                                            <span class="order-detail__link-title _view2">Детализация</span>
+                                        </a>
+                                        <a href="" class="order-detail__link ">
+                                            <span class="order-detail__link-title _view1">Переписка по заказу</span>
+                                            <span class="order-detail__link-title _view2">Переписка</span>
+                                            <span class="order-detail__link-count">2</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="order-detail__top2">
+                                    <div class="order-detail__props">
+                                        <div class="order-detail__prop">
+                                            <div class="order-detail__prop-title">
+                                                <span class="text14 light-gray-text">
+                    Статус заказа:
+                </span>
                                             </div>
-                                            <div class="text14">432534</div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Размер:
-                                            </div>
-                                            <div class="cart-table__sizes">
-                                                <div class="text14">41−1</div>
-                                                <div class="text14">42−2</div>
-                                                <div class="text14">43−2</div>
-                                                <div class="text14">41−1</div>
-                                                <div class="text14">41−1</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-info__item text12 bold-text">
-                                            Полуботинки
-                                        </div>
-                                        <div class="product-info__item text12">
-                                            <span class="light-gray-text">Сезон:</span>
-                                            <span>Весна-лето 2023</span>
-                                        </div>
-                                        <div class="product-info__item text12">
-                                            <span class="light-gray-text">Верх:</span>
-                                            <span>Натуральная кожа нубук...</span>
-                                        </div>
-                                        <div class="product-info__item text12">
-                                            <span class="light-gray-text">Подкладка:</span>
-                                            <span>Текстильный материал...</span>
-                                        </div>
-                                        <div class="product-info__item text12">
-                                            <span class="light-gray-text">Подошва:</span>
-                                            <span>Термоэластопласт (ТЭП)</span>
-                                        </div>
-                                        <div class="product-info__item text12">
-                                            <span class="light-gray-text">Цвет:</span>
-                                            <span>Черно-серый</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Цена:
-                                            </div>
-                                            <div class="cart-table__prices">
-                                                <div class="cart-table__price">
-                                                    <span class="text18 extra-bold-text primary-text">1 240,40</span>
-                                                    <span class="text16">бел.руб.</span>
-                                                </div>
-                                                <div class="cart-table__price">
-                                                    <span class="text18 line-through">1 432,80</span>
-                                                    <span class="text16">бел.руб.</span>
+                                            <div class="order-detail__prop-desc">
+                                                <div class="order-card__badge">
+                                                    <span>В обработке</span>
                                                 </div>
                                             </div>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Количество пар:
+                                        <div class="order-detail__prop">
+                                            <div class="order-detail__prop-title">
+                                                <span class="text14 light-gray-text">
+                    Номер заказа:
+                </span>
                                             </div>
-                                            <div class='cartcalc'>
-                                                <button class='ccalc-minus'>
-                                                    <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0.552 0.956H4.752V1.628H0.552V0.956Z" fill="#282828" />
-                                                    </svg>
-                                                </button>
-                                                <input type='text' value='1' readonly>
-                                                <button class='ccalc-plus'>
-                                                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M4.752 2.628H2.988V4.428H2.316V2.628H0.552V1.956H2.316V0.156H2.988V1.956H4.752V2.628Z" fill="#282828" />
-                                                    </svg>
-                                                </button>
-
-
-                                            </div>
-
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Стомость, без НДС
-                                            </div>
-                                            <div class="cart-table__price">
-                                                <span class="text14 extra-bold-text">1 240,40</span>
-                                                <span class="text16">бел.руб.</span>
+                                            <div class="order-detail__prop-desc">
+                                                <span class="text14 bold-text">
+                    060923173834
+                </span>
                                             </div>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Стоимость с НДС
+                                        <div class="order-detail__prop">
+                                            <div class="order-detail__prop-title">
+                                                <span class="text14 light-gray-text">
+                    Дата заказа:
+                </span>
                                             </div>
-                                            <div class="cart-table__price">
-                                                <span class="text14 extra-bold-text">1 489,00</span>
-                                                <span class="text16">бел.руб.</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Стоимость, итого
-                                            </div>
-                                            <div>
-                                                <div class="cart-table__price">
-                                                    <span class="text14 extra-bold-text">1 489,00</span>
-                                                    <span class="text16">бел.руб.</span>
-                                                </div>
-                                                <div class="cart-table__price line-through">
-                                                    <span class="text14">1 489,00</span>
-                                                    <span class="text16">бел.руб.</span>
-                                                </div>
+                                            <div class="order-detail__prop-desc">
+                                                <span class="text14">
+                    06.09.2023
+                </span>
                                             </div>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <button class="cart-table__delete">
-                                            <svg width="64" height="80" viewBox="0 0 64 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M23 34H25M25 34H41M25 34V48C25 48.5304 25.2107 49.0391 25.5858 49.4142C25.9609 49.7893 26.4696 50 27 50H37C37.5304 50 38.0391 49.7893 38.4142 49.4142C38.7893 49.0391 39 48.5304 39 48V34H25ZM28 34V32C28 31.4696 28.2107 30.9609 28.5858 30.5858C28.9609 30.2107 29.4696 30 30 30H34C34.5304 30 35.0391 30.2107 35.4142 30.5858C35.7893 30.9609 36 31.4696 36 32V34" stroke="#101828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
+                                        <div class="order-detail__prop">
+                                            <div class="order-detail__prop-title">
+                                                <span class="text14 light-gray-text">
+                    Менеджер:
+                </span>
+                                            </div>
+                                            <div class="order-detail__prop-desc">
+                                                <span class="text14">
+                    Иванова Анна Алексеевна
+                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-detail__nav">
+                                        <button class="order-detail__btn m-btn m-btn-red-outline">
+                                            <span>+ Добавить к заказу</span>
                                         </button>
-                                    </td>
-                                </tr>
-                                <tr class="cart-table__title">
-                                    <td colspan="11">
+                                    </div>
+                                </div>
+
+
+                                <div class="cart-table cart-table2">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th><span>Фото</span></th>
+                                                <th><span>Артикул</span></th>
+                                                <th><span>Размер</span></th>
+                                                <th><span>Описание</span></th>
+                                                <th><span>Цена</span></th>
+                                                <th><span>Количество <br> коробов/пар</span></th>
+                                                <th><span>Стоимость, итого</span></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="cart-table__title">
+                                                <td colspan="8">
+                                                    <div class="text18 bold-text">
+                                                        Модели в коробах
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="cart-table__img">
+                                                        <img src="img/catalog.webp" alt="">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Модель:
+                                                        </div>
+                                                        <div class="text14">432534</div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Размер:
+                                                        </div>
+                                                        <div class="cart-table__sizes">
+                                                            <div class="text14">41−1</div>
+                                                            <div class="text14">42−2</div>
+                                                            <div class="text14">43−2</div>
+                                                            <div class="text14">41−1</div>
+                                                            <div class="text14">41−1</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-info__item text12 bold-text">
+                                                        Полуботинки
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Сезон:</span>
+                                                        <span>Весна-лето 2023</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Верх:</span>
+                                                        <span>Натуральная кожа нубук...</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Подкладка:</span>
+                                                        <span>Текстильный материал...</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Подошва:</span>
+                                                        <span>Термоэластопласт (ТЭП)</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Цвет:</span>
+                                                        <span>Черно-серый</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Цена:
+                                                        </div>
+                                                        <div class="cart-table__prices">
+                                                            <div class="cart-table__price">
+                                                                <span class="text18 extra-bold-text primary-text">1 240,40</span>
+                                                                <span class="text16">бел.руб.</span>
+                                                            </div>
+                                                            <div class="cart-table__price">
+                                                                <span class="text18 line-through">1 432,80</span>
+                                                                <span class="text16">бел.руб.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Стоимость, итого
+                                                        </div>
+                                                        <div>
+                                                            <div class="cart-table__price">
+                                                                <span class="text14 extra-bold-text">1 489,00</span>
+                                                                <span class="text16">бел.руб.</span>
+                                                            </div>
+                                                            <div class="cart-table__price line-through">
+                                                                <span class="text14">1 489,00</span>
+                                                                <span class="text16">бел.руб.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr class="cart-table__title">
+                                                <td colspan="8">
+                                                    <div class="text18 bold-text">
+                                                        Модели росспью
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="cart-table__img">
+                                                        <img src="img/catalog2.webp" alt="">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Модель:
+                                                        </div>
+                                                        <div class="text14">432534</div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Размер:
+                                                        </div>
+                                                        <div class="cart-table__sizes">
+                                                            <div class="text14">42</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-info__item text12 bold-text">
+                                                        Полуботинки
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Сезон:</span>
+                                                        <span>Весна-лето 2023</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Верх:</span>
+                                                        <span>Натуральная кожа нубук...</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Подкладка:</span>
+                                                        <span>Текстильный материал...</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Подошва:</span>
+                                                        <span>Термоэластопласт (ТЭП)</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Цвет:</span>
+                                                        <span>Черно-серый</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Цена:
+                                                        </div>
+                                                        <div class="cart-table__prices">
+                                                            <div class="cart-table__price">
+                                                                <span class="text18 extra-bold-text primary-text">1 240,40</span>
+                                                                <span class="text16">бел.руб.</span>
+                                                            </div>
+                                                            <div class="cart-table__price">
+                                                                <span class="text18 line-through">1 432,80</span>
+                                                                <span class="text16">бел.руб.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Стоимость, итого
+                                                        </div>
+                                                        <div class="cart-table__price">
+                                                            <span class="text14 extra-bold-text">1 489,00</span>
+                                                            <span class="text16">бел.руб.</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="cart-table__img">
+                                                        <img src="img/catalog2.webp" alt="">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Модель:
+                                                        </div>
+                                                        <div class="text14">432534</div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Размер:
+                                                        </div>
+                                                        <div class="cart-table__sizes">
+                                                            <div class="text14">42</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-info__item text12 bold-text">
+                                                        Полуботинки
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Сезон:</span>
+                                                        <span>Весна-лето 2023</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Верх:</span>
+                                                        <span>Натуральная кожа нубук...</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Подкладка:</span>
+                                                        <span>Текстильный материал...</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Подошва:</span>
+                                                        <span>Термоэластопласт (ТЭП)</span>
+                                                    </div>
+                                                    <div class="product-info__item text12">
+                                                        <span class="light-gray-text">Цвет:</span>
+                                                        <span>Черно-серый</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Цена:
+                                                        </div>
+                                                        <div class="cart-table__prices">
+                                                            <div class="cart-table__price">
+                                                                <span class="text18 extra-bold-text primary-text">1 240,40</span>
+                                                                <span class="text16">бел.руб.</span>
+                                                            </div>
+                                                            <div class="cart-table__price">
+                                                                <span class="text18 line-through">1 432,80</span>
+                                                                <span class="text16">бел.руб.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="table-item">
+                                                        <div class="table-item__title text14 bold-text">
+                                                            Стоимость, итого
+                                                        </div>
+                                                        <div class="cart-table__price">
+                                                            <span class="text14 extra-bold-text">1 489,00</span>
+                                                            <span class="text16">бел.руб.</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="order-item__new">
+                                    <button class="order-detail__btn m-btn m-btn-red-outline">
+                                        <span>+ Добавить к заказу</span>
+                                    </button>
+                                </div>
+
+                                <div class="cart__detail">
+                                    <div class="text14 bold-text">
+                                        Индивидуальная скидка — 3%
+                                    </div>
+                                    <div class="cart__all">
+                                        <div class="text14 bold-text">
+                                            Всего коробов: 1
+                                        </div>
+                                        <div class="text14 bold-text">
+                                            Всего пар россыпью: 17
+                                        </div>
+                                    </div>
+                                    <div class="cart__prices">
+                                        <div class="cart__price">
+                                            <span class="_full text14 extra-bold-text">Итого, с НДС:</span>
+                                            <div class="text24 extra-bold-text primary-text">4 550,05</div>
+                                            <div class="text16">бел.руб.</div>
+                                        </div>
+                                        <div class="cart__price cart__price2">
+                                            <div class="text20 black80-text line-through">4 755,05</div>
+                                            <div class="text16">бел.руб.</div>
+                                        </div>
+                                        <div class="cart__price">
+                                            <span class="_full text14 extra-bold-text">Скидка:</span>
+                                            <div class="text20 black80-text">205,05</div>
+                                            <div class="text16">бел.руб.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cart__action">
+                                    <a href="" class="cart__action-btn">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 9.5V2.5H18V9.5M6 18.5H4C3.46957 18.5 2.96086 18.2893 2.58579 17.9142C2.21071 17.5391 2 17.0304 2 16.5V11.5C2 10.9696 2.21071 10.4609 2.58579 10.0858C2.96086 9.71071 3.46957 9.5 4 9.5H20C20.5304 9.5 21.0391 9.71071 21.4142 10.0858C21.7893 10.4609 22 10.9696 22 11.5V16.5C22 17.0304 21.7893 17.5391 21.4142 17.9142C21.0391 18.2893 20.5304 18.5 20 18.5H18M6 14.5H18V22.5H6V14.5Z" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="_view1">Распечатать заказ</span>
+                                        <span class="_view2">Распечатать</span>
+                                    </a>
+                                    <a href="" class="cart__action-btn">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 2.5H6C5.46957 2.5 4.96086 2.71071 4.58579 3.08579C4.21071 3.46086 4 3.96957 4 4.5V20.5C4 21.0304 4.21071 21.5391 4.58579 21.9142C4.96086 22.2893 5.46957 22.5 6 22.5H18C18.5304 22.5 19.0391 22.2893 19.4142 21.9142C19.7893 21.5391 20 21.0304 20 20.5V8.5M14 2.5L20 8.5M14 2.5V8.5H20M12 11.3221H17V15M12 11.3221H7V15M12 11.3221V18.5M12 18.5H17V15M12 18.5H7V15M17 15H12H7" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="_view1">Выгрузить в таблицу Excel</span>
+                                        <span class="_view2">в Excel</span>
+                                    </a>
+                                    <a href="" class="cart__action-btn">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 2.5H6C5.46957 2.5 4.96086 2.71071 4.58579 3.08579C4.21071 3.46086 4 3.96957 4 4.5V20.5C4 21.0304 4.21071 21.5391 4.58579 21.9142C4.96086 22.2893 5.46957 22.5 6 22.5H18C18.5304 22.5 19.0391 22.2893 19.4142 21.9142C19.7893 21.5391 20 21.0304 20 20.5V9.5M13 2.5L20 9.5M13 2.5V9.5H20" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.08032 13.4C8.64565 13.4 9.08565 13.5654 9.40032 13.896C9.71499 14.2214 9.87232 14.6774 9.87232 15.264C9.87232 15.8507 9.71499 16.3067 9.40032 16.632C9.08565 16.9574 8.64565 17.12 8.08032 17.12H7.51232V18.508C7.51232 18.7797 7.29204 19 7.02032 19C6.7486 19 6.52832 18.7797 6.52832 18.508V14.4C6.52832 13.8477 6.97604 13.4 7.52832 13.4H8.08032ZM8.07232 16.192C8.60032 16.192 8.86432 15.8827 8.86432 15.264C8.86432 14.6454 8.60032 14.336 8.07232 14.336H7.51232V16.192H8.07232Z" fill="#808080" />
+                                            <path d="M10.5361 14.4C10.5361 13.8477 10.9838 13.4 11.5361 13.4H12.0001C12.5548 13.4 12.9868 13.56 13.2961 13.88C13.6055 14.1947 13.7601 14.6374 13.7601 15.208V17.168C13.7601 17.744 13.6055 18.1947 13.2961 18.52C12.9921 18.84 12.5655 19 12.0161 19H11.5361C10.9838 19 10.5361 18.5523 10.5361 18V14.4ZM12.0161 18.064C12.2615 18.064 12.4481 17.9867 12.5761 17.832C12.7041 17.6774 12.7681 17.4534 12.7681 17.16V15.208C12.7681 14.92 12.7041 14.704 12.5761 14.56C12.4481 14.4107 12.2615 14.336 12.0161 14.336H11.5201V18.064H12.0161Z" fill="#808080" />
+                                            <path d="M15.6373 14.328V15.728H16.7533C17.003 15.728 17.2053 15.9304 17.2053 16.18C17.2053 16.4297 17.003 16.632 16.7533 16.632H15.6373V18.508C15.6373 18.7797 15.417 19 15.1453 19C14.8736 19 14.6533 18.7797 14.6533 18.508V14.4C14.6533 13.8477 15.101 13.4 15.6533 13.4H16.8933C17.1496 13.4 17.3573 13.6078 17.3573 13.864C17.3573 14.1203 17.1496 14.328 16.8933 14.328H15.6373Z" fill="#808080" />
+                                        </svg>
+                                        <span class="_view1">Выгрузить в PDF</span>
+                                        <span class="_view2">в PDF</span>
+                                    </a>
+                                </div>
+
+
+                                <div class="cart-sales">
+                                    <div class="cart-sales__top">
                                         <div class="text18 bold-text">
-                                            Модели росспью
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="m-check">
-                                            <input class="row-check" type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="cart-table__img">
-                                            <img src="img/catalog2.webp" alt="">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Модель:
-                                            </div>
-                                            <div class="text14">432534</div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Размер:
-                                            </div>
-                                            <div class="cart-table__sizes">
-                                                <div class="text14">42</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-info__item text12 bold-text">
-                                            Полуботинки
-                                        </div>
-                                        <div class="product-info__item text12">
-                                            <span class="light-gray-text">Сезон:</span>
-                                            <span>Весна-лето 2023</span>
-                                        </div>
-                                        <div class="product-info__item text12">
-                                            <span class="light-gray-text">Верх:</span>
-                                            <span>Натуральная кожа нубук...</span>
-                                        </div>
-                                        <div class="product-info__item text12">
-                                            <span class="light-gray-text">Подкладка:</span>
-                                            <span>Текстильный материал...</span>
-                                        </div>
-                                        <div class="product-info__item text12">
-                                            <span class="light-gray-text">Подошва:</span>
-                                            <span>Термоэластопласт (ТЭП)</span>
-                                        </div>
-                                        <div class="product-info__item text12">
-                                            <span class="light-gray-text">Цвет:</span>
-                                            <span>Черно-серый</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Цена:
-                                            </div>
-                                            <div class="cart-table__prices">
-                                                <div class="cart-table__price">
-                                                    <span class="text18 extra-bold-text primary-text">1 240,40</span>
-                                                    <span class="text16">бел.руб.</span>
-                                                </div>
-                                                <div class="cart-table__price">
-                                                    <span class="text18 line-through">1 432,80</span>
-                                                    <span class="text16">бел.руб.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Количество пар:
-                                            </div>
-                                            <div class='cartcalc'>
-                                                <button class='ccalc-minus'>
-                                                    <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0.552 0.956H4.752V1.628H0.552V0.956Z" fill="#282828" />
-                                                    </svg>
-                                                </button>
-                                                <input type='text' value='1' readonly>
-                                                <button class='ccalc-plus'>
-                                                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M4.752 2.628H2.988V4.428H2.316V2.628H0.552V1.956H2.316V0.156H2.988V1.956H4.752V2.628Z" fill="#282828" />
-                                                    </svg>
-                                                </button>
-
-
-                                            </div>
-
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Стомость, без НДС
-                                            </div>
-                                            <div class="cart-table__price">
-                                                <span class="text14 extra-bold-text">1 240,40</span>
-                                                <span class="text16">бел.руб.</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Стоимость с НДС
-                                            </div>
-                                            <div class="cart-table__price">
-                                                <span class="text14 extra-bold-text">1 489,00</span>
-                                                <span class="text16">бел.руб.</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item">
-                                            <div class="table-item__title text14 bold-text">
-                                                Стоимость, итого
-                                            </div>
-                                            <div class="cart-table__price">
-                                                <span class="text14 extra-bold-text">1 489,00</span>
-                                                <span class="text16">бел.руб.</span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <button class="cart-table__delete">
-                                            <svg width="64" height="80" viewBox="0 0 64 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M23 34H25M25 34H41M25 34V48C25 48.5304 25.2107 49.0391 25.5858 49.4142C25.9609 49.7893 26.4696 50 27 50H37C37.5304 50 38.0391 49.7893 38.4142 49.4142C38.7893 49.0391 39 48.5304 39 48V34H25ZM28 34V32C28 31.4696 28.2107 30.9609 28.5858 30.5858C28.9609 30.2107 29.4696 30 30 30H34C34.5304 30 35.0391 30.2107 35.4142 30.5858C35.7893 30.9609 36 31.4696 36 32V34" stroke="#101828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="cart__detail">
-                        <div class="text14 bold-text">
-                            Индивидуальная скидка — 3%
-                        </div>
-                        <div class="cart__all">
-                            <div class="text14 bold-text">
-                                Всего коробов: 1
-                            </div>
-                            <div class="text14 bold-text">
-                                Всего пар россыпью: 17
-                            </div>
-                        </div>
-                        <div class="cart__prices">
-                            <div class="cart__price">
-                                <span class="_full text14 extra-bold-text">Итого, с НДС:</span>
-                                <div class="text24 extra-bold-text primary-text">4 550,05</div>
-                                <div class="text16">бел.руб.</div>
-                            </div>
-                            <div class="cart__price cart__price2">
-                                <div class="text20 black80-text line-through">4 755,05</div>
-                                <div class="text16">бел.руб.</div>
-                            </div>
-                            <div class="cart__price">
-                                <span class="_full text14 extra-bold-text">Скидка:</span>
-                                <div class="text20 black80-text">205,05</div>
-                                <div class="text16">бел.руб.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cart__action">
-                        <a href="" class="cart__action-btn">
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 9.5V2.5H18V9.5M6 18.5H4C3.46957 18.5 2.96086 18.2893 2.58579 17.9142C2.21071 17.5391 2 17.0304 2 16.5V11.5C2 10.9696 2.21071 10.4609 2.58579 10.0858C2.96086 9.71071 3.46957 9.5 4 9.5H20C20.5304 9.5 21.0391 9.71071 21.4142 10.0858C21.7893 10.4609 22 10.9696 22 11.5V16.5C22 17.0304 21.7893 17.5391 21.4142 17.9142C21.0391 18.2893 20.5304 18.5 20 18.5H18M6 14.5H18V22.5H6V14.5Z" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <span class="_view1">Распечатать заказ</span>
-                            <span class="_view2">Распечатать</span>
-                        </a>
-                        <a href="" class="cart__action-btn">
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 2.5H6C5.46957 2.5 4.96086 2.71071 4.58579 3.08579C4.21071 3.46086 4 3.96957 4 4.5V20.5C4 21.0304 4.21071 21.5391 4.58579 21.9142C4.96086 22.2893 5.46957 22.5 6 22.5H18C18.5304 22.5 19.0391 22.2893 19.4142 21.9142C19.7893 21.5391 20 21.0304 20 20.5V8.5M14 2.5L20 8.5M14 2.5V8.5H20M12 11.3221H17V15M12 11.3221H7V15M12 11.3221V18.5M12 18.5H17V15M12 18.5H7V15M17 15H12H7" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <span class="_view1">Выгрузить в таблицу Excel</span>
-                            <span class="_view2">в Excel</span>
-                        </a>
-                        <a href="" class="cart__action-btn">
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13 2.5H6C5.46957 2.5 4.96086 2.71071 4.58579 3.08579C4.21071 3.46086 4 3.96957 4 4.5V20.5C4 21.0304 4.21071 21.5391 4.58579 21.9142C4.96086 22.2893 5.46957 22.5 6 22.5H18C18.5304 22.5 19.0391 22.2893 19.4142 21.9142C19.7893 21.5391 20 21.0304 20 20.5V9.5M13 2.5L20 9.5M13 2.5V9.5H20" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.08032 13.4C8.64565 13.4 9.08565 13.5654 9.40032 13.896C9.71499 14.2214 9.87232 14.6774 9.87232 15.264C9.87232 15.8507 9.71499 16.3067 9.40032 16.632C9.08565 16.9574 8.64565 17.12 8.08032 17.12H7.51232V18.508C7.51232 18.7797 7.29204 19 7.02032 19C6.7486 19 6.52832 18.7797 6.52832 18.508V14.4C6.52832 13.8477 6.97604 13.4 7.52832 13.4H8.08032ZM8.07232 16.192C8.60032 16.192 8.86432 15.8827 8.86432 15.264C8.86432 14.6454 8.60032 14.336 8.07232 14.336H7.51232V16.192H8.07232Z" fill="#808080" />
-                                <path d="M10.5361 14.4C10.5361 13.8477 10.9838 13.4 11.5361 13.4H12.0001C12.5548 13.4 12.9868 13.56 13.2961 13.88C13.6055 14.1947 13.7601 14.6374 13.7601 15.208V17.168C13.7601 17.744 13.6055 18.1947 13.2961 18.52C12.9921 18.84 12.5655 19 12.0161 19H11.5361C10.9838 19 10.5361 18.5523 10.5361 18V14.4ZM12.0161 18.064C12.2615 18.064 12.4481 17.9867 12.5761 17.832C12.7041 17.6774 12.7681 17.4534 12.7681 17.16V15.208C12.7681 14.92 12.7041 14.704 12.5761 14.56C12.4481 14.4107 12.2615 14.336 12.0161 14.336H11.5201V18.064H12.0161Z" fill="#808080" />
-                                <path d="M15.6373 14.328V15.728H16.7533C17.003 15.728 17.2053 15.9304 17.2053 16.18C17.2053 16.4297 17.003 16.632 16.7533 16.632H15.6373V18.508C15.6373 18.7797 15.417 19 15.1453 19C14.8736 19 14.6533 18.7797 14.6533 18.508V14.4C14.6533 13.8477 15.101 13.4 15.6533 13.4H16.8933C17.1496 13.4 17.3573 13.6078 17.3573 13.864C17.3573 14.1203 17.1496 14.328 16.8933 14.328H15.6373Z" fill="#808080" />
-                            </svg>
-                            <span class="_view1">Выгрузить в PDF</span>
-                            <span class="_view2">в PDF</span>
-                        </a>
-                    </div>
-
-
-                    <div class="cart-sales">
-                        <div class="cart-sales__top">
-                            <div class="text18 bold-text">
-                                Дополнительные скидки:
-                            </div>
-                        </div>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th><span>Условия скидки</span></th>
-                                    <th><span>Размер скидки</span></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text14">
-                                            <b>Быстрая предоплата:</b> предоплата до 5 июня 2023 г.
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text14">
-                                            3%
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text14">
-                                            <b>Не возврат брака</b>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text14">
-                                            2%
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="order">
-                        <div class="text18 bold-text">
-                            Информация о покупателе:
-                        </div>
-                        <div class="order__items">
-                            <div class="form-item">
-                                <div class="form-item__title">
-                                    <div class="text14">
-                                        ИНН/КПП
-                                    </div>
-                                </div>
-                                <div class="form-item__content">
-                                    <div class="form-item__fields">
-                                        <fieldset class="fg">
-                                            <input type="text">
-                                        </fieldset>
-                                        <fieldset class="fg">
-                                            <input type="text">
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-item">
-                                <div class="form-item__title">
-                                    <div class="text14">
-                                        ОГРН/ОГРНИП
-                                    </div>
-                                </div>
-                                <div class="form-item__content">
-                                    <div class="form-item__fields">
-                                        <fieldset class="fg _col2">
-                                            <input type="text">
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-items">
-                                <div class="form-item">
-                                    <div class="form-item__title">
-                                        <div class="text14">
-                                            Полное наименование компании
+                                            Дополнительные скидки:
                                         </div>
                                     </div>
-                                    <div class="form-item__content">
-                                        <div class="form-item__fields">
-                                            <fieldset class="fg _col3">
-                                                <input type="text">
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-item">
-                                    <div class="form-item__title">
-                                        <div class="text14">
-                                            Сокращенное наименование компании
-                                        </div>
-                                    </div>
-                                    <div class="form-item__content">
-                                        <div class="form-item__fields">
-                                            <fieldset class="fg _col2 _h80">
-                                                <textarea></textarea>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-items">
-                                <div class="form-item">
-                                    <div class="form-item__title">
-                                        <div class="text14">
-                                            Юридический адрес:
-                                        </div>
-                                    </div>
-                                    <div class="form-item__content">
-                                        <div class="form-item__fields">
-                                            <fieldset class="fg _col3">
-                                                <input type="text">
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-item">
-                                    <div class="form-item__title">
-                                        <div class="text14">
-                                            Сокращенное наименование компании
-                                        </div>
-                                    </div>
-                                    <div class="form-item__content">
-                                        <div class="form-item__fields">
-                                            <div class="m-check _black">
-                                                <input type="checkbox">
-                                                <label>
-                                                    <span>Совпадает с юридическим</span>
-                                                </label>
-                                            </div>
-                                            <fieldset class="fg _col3">
-                                                <input disabled type="text" value="214000, Смоленск, ул. Большая советская, 41/18, РФ">
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-items">
-                                <div class="form-item">
-                                    <div class="form-item__title">
-                                        <div class="text14">
-                                            Директор/ответственное лицо
-                                        </div>
-                                    </div>
-                                    <div class="form-item__content">
-                                        <div class="form-item__fields">
-                                            <fieldset class="fg">
-                                                <input type="text">
-                                            </fieldset>
-                                            <fieldset class="fg">
-                                                <input type="text">
-                                            </fieldset>
-                                            <fieldset class="fg">
-                                                <input type="text">
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-item">
-                                    <div class="form-item__title">
-                                        <div class="text14">
-                                            Действует на основании:
-                                        </div>
-                                    </div>
-                                    <div class="form-item__content">
-                                        <div class="form-item__fields">
-                                            <fieldset class="fg _col2">
-                                                <select>
-                                                    <option selected>Устава организации</option>
-                                                    <option>Устава организации 2</option>
-                                                </select>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="order__subtitle">
-                                <div class="text18 bold-text">
-                                    Платежные реквизиты:
-                                </div>
-                            </div>
-                            <div class="form-items">
-                                <div class="form-item">
-                                    <div class="form-item__title">
-                                        <div class="text14">
-                                            БИК
-                                        </div>
-                                    </div>
-                                    <div class="form-item__content">
-                                        <div class="form-item__fields">
-                                            <fieldset class="fg _col2">
-                                                <input type="text">
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-item">
-                                    <div class="form-item__title">
-                                        <div class="text14">
-                                            Банк получателя
-                                        </div>
-                                    </div>
-                                    <div class="form-item__content">
-                                        <div class="form-item__fields">
-                                            <fieldset class="fg _col2">
-                                                <input type="text">
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-item">
-                                    <div class="form-item__title">
-                                        <div class="text14">
-                                            К/C
-                                        </div>
-                                    </div>
-                                    <div class="form-item__content">
-                                        <div class="form-item__fields">
-                                            <fieldset class="fg _col2">
-                                                <input type="text">
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-item">
-                                    <div class="form-item__title">
-                                        <div class="text14">
-                                            К/C
-                                        </div>
-                                    </div>
-                                    <div class="form-item__content">
-                                        <div class="form-item__fields">
-                                            <fieldset class="fg _col2">
-                                                <input type="text">
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="order__subtitle _no-border">
-                                <div class="text18 bold-text">
-                                    Копии документов:
-                                </div>
-                            </div>
-                            <div class="form-item">
-                                <div class="form-item__title">
-                                    <div class="text14">
-                                        Сканы документов
-                                    </div>
-                                    <div class="text12">
-                                        Допускаются файлы в форматах JPG, PDF, PNG
-                                    </div>
-                                </div>
-                                <div class="form-item__content">
-                                    <div class="form-item__fields">
-                                        <div class="order__upload _col2">
-                                            <div class="upload">
-                                                <input type="file">
-                                                <div class="upload__inner">
-                                                    <div class="text14 bold-text">Карточка реквизитов компании</div>
-                                                    <div class="upload__icon">
-                                                        <img src="img/upload.svg" alt="">
-                                                    </div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th><span>Условия скидки</span></th>
+                                                <th><span>Размер скидки</span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td>
                                                     <div class="text14">
-                                                        <b>Нажмите для загрузки </b>
-                                                        или перетащите файл в поле <br>
+                                                        <b>Быстрая предоплата:</b> предоплата до 5 июня 2023 г.
                                                     </div>
+                                                </td>
+                                                <td>
                                                     <div class="text14">
-                                                        JPG, PDF, PNG (до 10 МБ)
+                                                        3%
                                                     </div>
-                                                </div>
-                                            </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div class="text14">
+                                                        <b>Не возврат брака</b>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text14">
+                                                        2%
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                                            <div class="file">
-                                                <div class="upload__icon">
-                                                    <img src="img/upload2.svg" alt="">
-                                                </div>
-                                                <div class="file__content">
-                                                    <div class="text14">
-                                                        <b>Устав компании</b> (ustav-2021.docx)
-                                                    </div>
-                                                    <div class="text14">
-                                                        6 MB
-                                                    </div>
-                                                </div>
-                                                <button class="file__delete">
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M2.5 4.99984H4.16667M4.16667 4.99984H17.5M4.16667 4.99984V16.6665C4.16667 17.1085 4.34226 17.5325 4.65482 17.845C4.96738 18.1576 5.39131 18.3332 5.83333 18.3332H14.1667C14.6087 18.3332 15.0326 18.1576 15.3452 17.845C15.6577 17.5325 15.8333 17.1085 15.8333 16.6665V4.99984H4.16667ZM6.66667 4.99984V3.33317C6.66667 2.89114 6.84226 2.46722 7.15482 2.15466C7.46738 1.8421 7.89131 1.6665 8.33333 1.6665H11.6667C12.1087 1.6665 12.5326 1.8421 12.8452 2.15466C13.1577 2.46722 13.3333 2.89114 13.3333 3.33317V4.99984M8.33333 9.1665V14.1665M11.6667 9.1665V14.1665" stroke="#667085" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </button>
+                                <div class="order-params">
+                                    <div class="order-params__top">
+                                        <div class="text18 bold-text">
+                                            Параметры заказа:
+                                        </div>
+                                    </div>
+                                    <div class="order-params__items">
+                                        <div class="order-params__item">
+                                            <div class="order-params__item-col">
+                                                <div class="text14 bold-text">Контактное лицо:</div>
                                             </div>
-
-                                            <div class="file">
-                                                <div class="upload__icon">
-                                                    <img src="img/upload2.svg" alt="">
-                                                </div>
-                                                <div class="file__content">
-                                                    <div class="text14">
-                                                        <b>Свидетельство о постановке на учет</b> (свид-налоговая.pdf)
-                                                    </div>
-                                                    <div class="text14">
-                                                        4.2 MB
-                                                    </div>
-                                                </div>
-                                                <button class="file__delete">
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M2.5 4.99984H4.16667M4.16667 4.99984H17.5M4.16667 4.99984V16.6665C4.16667 17.1085 4.34226 17.5325 4.65482 17.845C4.96738 18.1576 5.39131 18.3332 5.83333 18.3332H14.1667C14.6087 18.3332 15.0326 18.1576 15.3452 17.845C15.6577 17.5325 15.8333 17.1085 15.8333 16.6665V4.99984H4.16667ZM6.66667 4.99984V3.33317C6.66667 2.89114 6.84226 2.46722 7.15482 2.15466C7.46738 1.8421 7.89131 1.6665 8.33333 1.6665H11.6667C12.1087 1.6665 12.5326 1.8421 12.8452 2.15466C13.1577 2.46722 13.3333 2.89114 13.3333 3.33317V4.99984M8.33333 9.1665V14.1665M11.6667 9.1665V14.1665" stroke="#667085" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </button>
+                                            <div class="order-params__item-col">
+                                                <div class="text14">Телефон для связи:</div>
                                             </div>
-
+                                        </div>
+                                        <div class="order-params__item">
+                                            <div class="order-params__item-col">
+                                                <div class="text14 bold-text">Телефон для связи:</div>
+                                            </div>
+                                            <div class="order-params__item-col">
+                                                <div class="text14">+7 456 024 33 13</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-params__item">
+                                            <div class="order-params__item-col">
+                                                <div class="text14 bold-text">Доставка:</div>
+                                            </div>
+                                            <div class="order-params__item-col">
+                                                <div class="text14">доставка транспортной компанией</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-params__item">
+                                            <div class="order-params__item-col">
+                                                <div class="text14 bold-text">Адрес доставки:</div>
+                                            </div>
+                                            <div class="order-params__item-col">
+                                                <div class="text14">214000, Смоленск, ул. Большая советская, 41/18, РФ</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-item">
-                                <div class="form-item__title">
-                                    <div class="text14">
-                                        Комментарий к заказу
-                                    </div>
-                                    <div class="text12">
-                                        Краткий комментарий о покупателе, чтобы другим менеджерам было комфортнее вести с ним диалог.
-                                    </div>
-                                </div>
-                                <div class="form-item__content">
-                                    <div class="form-item__fields">
-                                        <fieldset class="fg _col2">
-                                            <textarea></textarea>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-item">
-                                <div class="form-item__title _hide-mob"></div>
-                                <div class="form-item__content">
-                                    <div class="order__links">
-                                        <a href="" class="cart__action-btn"><span>Условия оплаты</span></a>
-                                        <a href="" class="cart__action-btn"><span>Положение о скидках</span></a>
-                                        <a href="" class="cart__action-btn"><span>Выгрузить в таблицу Excel</span></a>
-                                        <a href="" class="cart__action-btn"><span>Сохранить как отложенный</span></a>
-                                        <a href="" class="cart__action-btn"><span>Скопировать в новый</span></a>
-                                        <a href="" class="cart__action-btn"><span>Удалить</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-item">
-                                <div class="form-item__title _hide-mob"></div>
-                                <div class="form-item__content">
-                                    <div class="form-item__fields">
-                                        <div class="m-check _col2">
-                                            <input type="checkbox">
-                                            <label>
-                                                <span>
-                                                    Даю согласие на обработку моих персональных данных в соответствии с 
-                                                    <a href="">Политикой в области обработки персональных данных</a>
-                                                    , также подтверждаю, что до дачи согласия мне разъяснены и понятны
-                                                    <a href="">права, связанные с обработкой моих персональных данных, механизм их реализации, а также последствия дачи согласия или отказа в даче такого согласия</a>
-                                                    . *
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="order__nav">
-                            <button class="m-btn m-btn-default">
-                                <span>Отправить менеджеру</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-            <div class="cart-nav">
-                <div class="container">
-                    <div class="cart-nav__inner">
-                        <div class="text18 bold-text">
-                            Действия с выбранными:
-                        </div>
-                        <fieldset class="cart-nav__action fg">
-                            <select>
-                                <option>Добавить в сравнение</option>
-                                <option>Переместить в избранное</option>
-                                <option>Удалить</option>
-                            </select>
-                        </fieldset>
-                        <button class="cart-nav__btn m-btn m-btn-red-outline _gray">
-                            <span>Применить</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <section class="subscribe">
-                <div class="container">
-                    <div class="subscribe__inner">
-                        <div class="subscribe-info">
-                            <div class="text32">Нравится наша продукция?</div>
-                            <div class="text18">Подпишитесь и будьте первыми в курсе самых последних событий.</div>
-                        </div>
-                        <form class="subscribe-form">
-                            <div class="subscribe-form__top">
-                                <fieldset class="subscribe-form__field">
-                                    <input type="email" placeholder="Email">
-                                </fieldset>
-                                <button class="subscribe-form__btn m-btn m-btn-red">
-                                    <span class="_view1">Подписаться</span>
-                                    <span class="_view2">Ок</span>
-                                </button>
-                            </div>
-                            <div class="subscribe-form__check m-check">
-                                <input type="checkbox">
-                                <label>
-                                    <span>
-                            Даю согласие на обработку моих персональных данных с целью направления мне рекламной информации посредством электронной почты (e-mail-рассылка) в соответствии с
-                            <a href="">Политикой в области обработки персональных данных</a> , также подтверждаю, что до дачи согласия мне разъяснены и понятны
-                            <a href="">права, связанные с обработкой моих персональных данных, механизм их реализации, а также последствия дачи согласия или отказа в даче такого согласия</a> . *
-                        </span>
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <section class="subscribe">
-                <div class="container">
-                    <div class="subscribe__inner">
-                        <div class="subscribe-info">
-                            <div class="text32">Нравится наша продукция?</div>
-                            <div class="text18">Подпишитесь и будьте первыми в курсе самых последних событий.</div>
-                        </div>
-                        <div class="subscribe__response">
-                            <div class="subscribe__badge">
-                                <img src="img/check2.svg" alt="">
-                                <span class="text18">Поздравляем! Вы подписаны</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="subscribe">
-                <div class="container">
-                    <div class="subscribe__inner">
-                        <div class="subscribe-info">
-                            <div class="text32">Нравится наша продукция?</div>
-                            <div class="text18">Подпишитесь и будьте первыми в курсе самых последних событий.</div>
-                        </div>
-                        <div class="subscribe__response">
-                            <div class="subscribe__badge _red">
-                                <img src="img/slash.svg" alt="">
-                                <span class="text18">Ошибка! Вы уже были подписаны ранее</span>
-                            </div>
                         </div>
                     </div>
                 </div>
