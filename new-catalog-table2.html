@@ -3646,6 +3646,92 @@
         </div>
     </div>
 
+    <div class="modal product-modal" id="addProductModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6.5L6 18.5M6 6.5L18 18.5" stroke="#B2B2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="modal__scroll">
+                <div class="modal__title text35 bold-text">
+                    Добавить товары в отложенный заказ
+                </div>
+                <div class="product-modal__desc">
+                    <div class="text14">
+                        Отложенные заказы всегда доступны в одноименной вкладке. Любой отложенный заказ можно сделать активным и перевести в статус текущего.
+                    </div>
+                </div>
+                <div class="product-modal__hint">
+                    <div class="text14">
+                        Будет отложено <b>7</b> моделей в <b>148</b> парах и <b>4</b> коробах, всего на сумму <b>32 423,00</b> BYN
+                    </div>
+                </div>
+                <div class="product-modal__products">
+                    <div class="order-card__img">
+                        <img src="img/order-img.webp" alt="">
+                    </div>
+                    <div class="order-card__img">
+                        <img src="img/order-img2.webp" alt="">
+                    </div>
+                    <div class="order-card__img">
+                        <img src="img/order-img3.webp" alt="">
+                    </div>
+                    <div class="order-card__img">
+                        <div class="text14 bold-text">
+                            +4
+                        </div>
+                    </div>
+                </div>
+                <div class="product-modal__field">
+                    <fieldset class="fg">
+                        <label>Название заказа</label>
+                        <input type="text" value="Отложенный заказ № 4523">
+                    </fieldset>
+                </div>
+                <div class="product-modal__nav">
+                    <button class="m-btn m-btn-red-outline">
+                        <span>Отложить заказ</span>
+                    </button>
+                    <button class="m-btn m-btn-red-outline _gray _close-modal">
+                        <span>Отменить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal product-modal" id="cancelOrderModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6.5L6 18.5M6 6.5L18 18.5" stroke="#B2B2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="modal__scroll">
+                <div class="modal__title text35 bold-text">
+                    Отменить заказ №060923173834
+                </div>
+                <div class="product-modal__field2">
+                    <fieldset class="fg">
+                        <label>Причина отмены</label>
+                        <textarea>Нет необходимых мне артикулов в нужном количестве</textarea>
+                    </fieldset>
+                </div>
+                <div class="product-modal__nav">
+                    <button class="m-btn m-btn-red-outline">
+                        <span>Отменить заказ</span>
+                    </button>
+                    <button class="m-btn m-btn-red-outline _gray _close-modal">
+                        <span>Отменить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- <div class="modal-backdrop show"></div> -->
 
     <script src="js/libs.min.js"></script>
