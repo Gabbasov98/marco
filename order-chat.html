@@ -1807,17 +1807,21 @@
         </div>
     </div>
 
-    <div class="modal products-modal" id="productsModal">
+    <div class="modal _active products-modal" id="productsModal">
         <div class="modal__bg _close-modal"></div>
         <div class="modal__dialog">
-            <button class="modal__close _close-modal">
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 6.5L6 18.5M6 6.5L18 18.5" stroke="#B2B2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
-            <div class="text34 text28-mob bold-text">
-                Заказ №060923173834
+            <div class="products-modal__top">
+                <div class="text34 text28-mob bold-text">
+                    Заказ №060923173834
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6.5L6 18.5M6 6.5L18 18.5" stroke="#B2B2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
+
+
             <div class="search-top">
                 <div class="search-top__grid">
                     <div class="fg">
@@ -1858,7 +1862,6 @@
             </div>
             <div class="catalog__inner">
                 <div class="catalog__col">
-
                     <div class="catalog-sidebar">
                         <div class="catalog-sidebar__top">
                             <div class="text20 semi-bold-text">
@@ -1872,62 +1875,403 @@
                         </div>
                         <div class="catalog-sidebar__scroll">
                             <div class="catalog-sidebar__inner">
-                                <div class="filter-group">
+                                <div class="products-modal__filter2">
+                                    <div class="search-top">
+                                        <div class="search-top__grid">
+                                            <div class="fg">
+                                                <input type="text" placeholder="Поиск">
+                                            </div>
+                                            <button class="search-top__btn m-btn m-btn-red">
+                                                <span>Найти</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products-modal__filter">
+                                        <div class="products-modal__filter-title text14 bold-text">
+                                            Пол / Возраст:
+                                        </div>
+                                        <div class="search-links">
+                                            <div class="search-links__current"></div>
+                                            <div class="search-links__items">
+                                                <a href="" class="search-links__item _active">
+                                                    <span>Все</span>
+                                                </a>
+                                                <a href="" class="search-links__item">
+                                                    <span>Женщинам</span>
+                                                </a>
+                                                <a href="" class="search-links__item">
+                                                    <span>Мужчинам</span>
+                                                </a>
+                                                <a href="" class="search-links__item">
+                                                    <span>Девочкам</span>
+                                                </a>
+                                                <a href="" class="search-links__item">
+                                                    <span>Мальчикам</span>
+                                                </a>
+                                                <a href="" class="search-links__item">
+                                                    <span>Малышам</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-group _active">
                                     <div class="filter-group__show">
-                                        <div class="text18 bold-text">Цена, руб.</div>
+                                        <div class="text18 bold-text">
+                                            Цена, руб.
+                                        </div>
+                                        <button class="filter-group__btn">
+                                            <img src="img/arrow4.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    <div class="filter-group__hidden" style="display: block;">
+                                        <div class="filter-slider">
+                                            <div class="filter-slider__inputs">
+                                                <div class="filter-slider__input _right">
+                                                    <input class="range-slider__input1" min="0" max="100000" type="number">
+                                                </div>
+                                                <span class="filter-slider__split text18">–</span>
+                                                <div class="filter-slider__input">
+                                                    <input class="range-slider__input2" min="0" max="100000" type="number">
+                                                </div>
+                                            </div>
+                                            <div class="range-slider"></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="filter-group">
                                     <div class="filter-group__show">
-                                        <div class="text18 bold-text">Категории обуви</div>
+                                        <div class="text18 bold-text">
+                                            Категории обуви
+                                        </div>
+                                        <button class="filter-group__btn">
+                                            <img src="img/arrow4.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    <div class="filter-group__hidden">
+                                        <div class="filter-group__items">
+                                            <div class="filter-group__item">
+                                                <div class="filter-group__item-show">
+                                                    <button class="filter-group__item-btn">
+                                                        <img src="img/plus.svg" alt="" class="_view1">
+                                                        <img src="img/minus2.svg" alt="" class="_view2">
+                                                    </button>
+                                                    <div class="m-check">
+                                                        <input class="_halfChecked" type="checkbox">
+                                                        <label><span>Все туфли</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-group__item-hidden">
+                                                    <div class="filter-group__checks">
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>кеды</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>кроссовки/сникеры</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>лоферы</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>мокасины</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>п/ботинки</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>п/кеды</span></label>
+                                                        </div>
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>слипоны</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="filter-group__item">
+                                                <div class="filter-group__item-show">
+                                                    <button class="filter-group__item-btn">
+                                                        <img src="img/plus.svg" alt="" class="_view1">
+                                                        <img src="img/minus2.svg" alt="" class="_view2">
+                                                    </button>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label>
+                                                            <span>
+                                            Все ботинки, <br>полусапожки, сапожки
+                                        </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-group__item-hidden">
+                                                    <div class="filter-group__checks">
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>кеды</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="filter-group__item">
+                                                <div class="filter-group__item-show">
+                                                    <button class="filter-group__item-btn">
+                                                        <img src="img/plus.svg" alt="" class="_view1">
+                                                        <img src="img/minus2.svg" alt="" class="_view2">
+                                                    </button>
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label>
+                                                            <span>
+                                            Все сапоги
+                                        </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-group__item-hidden">
+                                                    <div class="filter-group__checks">
+                                                        <div class="m-check">
+                                                            <input type="checkbox">
+                                                            <label><span>кеды</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="filter-group">
                                     <div class="filter-group__show">
-                                        <div class="text18 bold-text">Сезон</div>
+                                        <div class="text18 bold-text">
+                                            Сезон
+                                        </div>
+                                        <button class="filter-group__btn">
+                                            <img src="img/arrow4.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    <div class="filter-group__hidden">
+                                        <div class="filter-group__checks">
+                                            <div class="m-check">
+                                                <input type="checkbox">
+                                                <label><span>Весенне-осенняя</span></label>
+                                            </div>
+                                            <div class="m-check">
+                                                <input type="checkbox">
+                                                <label><span>Зимняя</span></label>
+                                            </div>
+                                            <div class="m-check">
+                                                <input type="checkbox">
+                                                <label><span>Круглосезонная</span></label>
+                                            </div>
+                                            <div class="m-check">
+                                                <input type="checkbox">
+                                                <label><span>Летняя</span></label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="filter-group">
                                     <div class="filter-group__show">
-                                        <div class="text18 bold-text">Размеры</div>
+                                        <div class="text18 bold-text">
+                                            Размеры
+                                        </div>
+                                        <button class="filter-group__btn">
+                                            <img src="img/arrow4.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    <div class="filter-group__hidden">
+                                        <div class="filter-group__checks">
+                                            <div class="m-check">
+                                                <input type="checkbox">
+                                                <label><span>checkbox</span></label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="filter-group">
                                     <div class="filter-group__show">
-                                        <div class="text18 bold-text">Цвет</div>
+                                        <div class="text18 bold-text">
+                                            Цвет
+                                        </div>
+                                        <button class="filter-group__btn">
+                                            <img src="img/arrow4.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    <div class="filter-group__hidden">
+                                        <div class="filter-group__checks">
+                                            <div class="m-check color-check">
+                                                <input type="checkbox">
+                                                <label>
+                                                    <i style="background: #282828;"></i>
+                                                    <span>черный</span>
+                                                </label>
+                                            </div>
+                                            <div class="m-check color-check">
+                                                <input type="checkbox">
+                                                <label>
+                                                    <i style="background: #fff; border: 1px solid #D5D4D3;"></i>
+                                                    <span>белый</span>
+                                                </label>
+                                            </div>
+                                            <div class="m-check color-check">
+                                                <input type="checkbox">
+                                                <label>
+                                                    <i style="background: #742F2F;"></i>
+                                                    <span>коричневый</span>
+                                                </label>
+                                            </div>
+                                            <div class="m-check color-check">
+                                                <input type="checkbox">
+                                                <label>
+                                                    <i style="background: #807D7D;"></i>
+                                                    <span>серый</span>
+                                                </label>
+                                            </div>
+                                            <div class="m-check color-check">
+                                                <input type="checkbox">
+                                                <label>
+                                                    <i style="background: #F2D2B4;"></i>
+                                                    <span>бежевый</span>
+                                                </label>
+                                            </div>
+                                            <div class="m-check color-check">
+                                                <input type="checkbox">
+                                                <label>
+                                                    <i style="background: #2143F8;"></i>
+                                                    <span>синий</span>
+                                                </label>
+                                            </div>
+                                            <div class="m-check color-check">
+                                                <input type="checkbox">
+                                                <label>
+                                                    <i style="background: #EE1C25;"></i>
+                                                    <span>красный</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="filter-group">
                                     <div class="filter-group__show">
-                                        <div class="text18 bold-text">Материал верха</div>
+                                        <div class="text18 bold-text">
+                                            Материал верха
+                                        </div>
+                                        <button class="filter-group__btn">
+                                            <img src="img/arrow4.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    <div class="filter-group__hidden">
+                                        <div class="filter-group__checks">
+                                            <div class="m-check">
+                                                <input type="checkbox">
+                                                <label><span>checkbox</span></label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="filter-group">
                                     <div class="filter-group__show">
-                                        <div class="text18 bold-text">Материал подкладки</div>
+                                        <div class="text18 bold-text">
+                                            Материал подкладки
+                                        </div>
+                                        <button class="filter-group__btn">
+                                            <img src="img/arrow4.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    <div class="filter-group__hidden">
+                                        <div class="filter-group__checks">
+                                            <div class="m-check">
+                                                <input type="checkbox">
+                                                <label><span>checkbox</span></label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="filter-group">
                                     <div class="filter-group__show">
-                                        <div class="text18 bold-text">Полнота</div>
+                                        <div class="text18 bold-text">
+                                            Полнота
+                                        </div>
+                                        <button class="filter-group__btn">
+                                            <img src="img/arrow4.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    <div class="filter-group__hidden">
+                                        <div class="filter-group__checks">
+                                            <div class="m-check">
+                                                <input type="checkbox">
+                                                <label><span>checkbox</span></label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="filter-group">
                                     <div class="filter-group__show">
-                                        <div class="text18 bold-text">Бренд</div>
+                                        <div class="text18 bold-text">
+                                            Бренд
+                                        </div>
+                                        <button class="filter-group__btn">
+                                            <img src="img/arrow4.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    <div class="filter-group__hidden">
+                                        <div class="filter-group__checks">
+                                            <div class="m-check">
+                                                <input type="checkbox">
+                                                <label><span>checkbox</span></label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="filter-group">
                                     <div class="filter-group__show">
-                                        <div class="text18 bold-text">Стиль</div>
+                                        <div class="text18 bold-text">
+                                            Стиль
+                                        </div>
+                                        <button class="filter-group__btn">
+                                            <img src="img/arrow4.svg" alt="">
+                                        </button>
                                     </div>
+
+                                    <div class="filter-group__hidden">
+                                        <div class="filter-group__checks">
+                                            <div class="m-check">
+                                                <input type="checkbox">
+                                                <label><span>checkbox</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-sidebar__bottom">
+                                <div class="text16">
+                                    Найдено: 326 из 2 491
+                                </div>
+                                <div class="catalog-sidebar__buttons">
+                                    <button class="catalog-sidebar__btn m-btn">
+                                        <span>Сбросить</span>
+                                    </button>
+                                    <button class="catalog-sidebar__btn m-btn m-btn-red-outline">
+                                        <span>Показать</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
                 <div class="catalog__col">
                     <div class="lk-filter">
@@ -27060,6 +27404,41 @@
 
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script>
+        const rangeSlider = document.querySelector(`.range-slider`)
+        const rangeInput0 = document.querySelector(`.range-slider__input1`)
+        const rangeInput1 = document.querySelector(`.range-slider__input2`)
+        const rangeInputs = [rangeInput0, rangeInput1]
+        if (rangeSlider) {
+            noUiSlider.create(rangeSlider, {
+                start: [10000, 50000],
+                connect: true,
+                step: 1,
+                range: {
+                    'min': 0,
+                    'max': 100000
+                }
+            });
+        }
+        if (rangeSlider) {
+            rangeSlider.noUiSlider.on('update', function(values, handle) {
+                rangeInputs[handle].value = Math.round(values[handle])
+            })
+            rangeInputs.forEach((el, index) => {
+                el.addEventListener('change', (e) => {
+                    setRangeSlider(index, e.currentTarget.value)
+                })
+            })
+        }
+
+
+        const setRangeSlider = (i, value) => {
+            let array = [null, null];
+            array[i] = value;
+
+            rangeSlider.noUiSlider.set(array);
+        };
+    </script>
 
 </body>
 
